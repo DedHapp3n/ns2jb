@@ -158,6 +158,25 @@ test('one host address and one BASIC command select the fixed Switch 2 path', as
   ]}), ['10.1.0.2']);
 });
 
+test('local IPC paths are portable between Unix sockets and Windows named pipes', () => {
+  const {localIpcPath} = require('./engine/shared/local-ipc.cjs');
+  const nonce = '00112233445566778899aabbccddeeff';
+  assert.equal(localIpcPath('/tmp/ns2-test', 'memory', {platform: 'linux', nonce}),
+    path.join('/tmp/ns2-test', 'memory.sock'));
+  assert.equal(localIpcPath('C:\\Temp\\ns2-test', 'memory', {platform: 'win32', nonce}),
+    '\\\\.\\pipe\\ns2jb-memory-' + nonce);
+  assert.throws(() => localIpcPath('C:\\Temp', '../bad', {platform: 'win32', nonce}), /Invalid IPC endpoint name/);
+  assert.throws(() => localIpcPath('C:\\Temp', 'memory', {platform: 'win32', nonce: 'short'}), /Invalid IPC endpoint nonce/);
+});
+
+test('run-control temp directories live under the host temp directory', async t => {
+  const {createPrivateTempDirectory} = require('./engine/shared/local-ipc.cjs');
+  const directory = await createPrivateTempDirectory('ns2-host-test-');
+  t.after(() => fs.rmSync(directory, {recursive: true, force: true}));
+  assert.equal(path.dirname(directory), path.resolve(os.tmpdir()));
+  assert.ok(path.basename(directory).startsWith('ns2-host-test-'));
+});
+
 test('a stop prevents the next operation but still permits restoration', async t => {
   const {RunControl, StopRequested} = require('./engine/switch2/memory/run-control.cjs');
   const snapshots = [], control = new RunControl({id: 'host-test', save: async () => snapshots.push({...control.state})});
