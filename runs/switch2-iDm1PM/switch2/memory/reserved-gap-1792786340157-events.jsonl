@@ -1,0 +1,299 @@
+{"at":"2026-10-23T20:12:20.221Z","operation":"initialize","session":"switch2-iDm1PM","base":153433649152,"bytes":37748736}
+{"at":"2026-10-23T20:12:20.276Z","operation":"workerCodeVerified"}
+{"at":"2026-10-23T20:12:20.340Z","operation":"counterFrequency","nativeModule":231950061568,"address":231951361776,"frequency":31250000,"legacyFrequency":19200000,"instructionBytes":"00ca9a52803ba072c0035fd6"}
+{"at":"2026-10-23T20:12:20.387Z","operation":"availableCoreMasks","processMask":"63","sdkMask":"7"}
+{"at":"2026-10-23T20:12:20.448Z","operation":"Copy existing save filesystem","handle":688620,"transport":0}
+{"at":"2026-10-23T20:12:20.454Z","operation":"Copy existing save filesystem reply","result":0,"objects":[],"moves":[2916801],"copies":[],"data":"00000000000000000000000000000000"}
+{"at":"2026-10-23T20:12:20.455Z","operation":"MountedFilesystemCopied","name":"save","borrowed":688620,"objectId":147,"handle":2916801}
+{"at":"2026-10-23T20:12:20.510Z","operation":"Copy existing save filesystem","handle":688620,"transport":0}
+{"at":"2026-10-23T20:12:20.516Z","operation":"Copy existing save filesystem reply","result":0,"objects":[],"moves":[2949563],"copies":[],"data":"00000000000000000000000000000000"}
+{"at":"2026-10-23T20:12:20.516Z","operation":"MountedFilesystemCopied","name":"tmp","borrowed":688620,"objectId":148,"handle":2949563}
+{"at":"2026-10-23T20:12:20.530Z","operation":"GetService","name":"fsp-srv","result":0,"handle":2982330}
+{"at":"2026-10-23T20:12:20.539Z","operation":"Initialize gap root","handle":2982330,"command":1,"transport":0}
+{"at":"2026-10-23T20:12:20.544Z","operation":"Initialize gap root reply","result":0,"copies":[],"moves":[],"interfaceId":2113097426,"data":"0000000000000000010000000000000000000000000000000000000000000000"}
+{"at":"2026-10-23T20:12:20.590Z","operation":"Copy mounted RomFS storage","handle":688620,"transport":0}
+{"at":"2026-10-23T20:12:20.596Z","operation":"Copy mounted RomFS storage reply","result":0,"objects":[],"moves":[3015097],"copies":[],"data":"00000000000000000000000000000000"}
+{"at":"2026-10-23T20:12:20.596Z","operation":"MountedRomStorageCopied","mount":153077518336,"storage":153077497856,"serviceAddress":153077493760,"manager":232191729072,"borrowed":688620,"objectId":146,"handle":3015097}
+{"at":"2026-10-23T20:12:20.610Z","operation":"Path command 11","handle":2916801,"transport":0}
+{"at":"2026-10-23T20:12:20.615Z","operation":"Path command 11 reply","result":0,"objects":[],"moves":[],"copies":[],"data":"0040fe03000000000000000000000000"}
+{"at":"2026-10-23T20:12:20.631Z","operation":"Path command 7","handle":2916801,"transport":0}
+{"at":"2026-10-23T20:12:20.637Z","operation":"Path command 7 reply","result":514,"objects":[],"moves":[],"copies":[],"data":"00000000000000000000000000000000"}
+{"at":"2026-10-23T20:12:20.651Z","operation":"Path command 2","handle":2916801,"transport":0}
+{"at":"2026-10-23T20:12:20.657Z","operation":"Path command 2 reply","result":0,"objects":[],"moves":[],"copies":[],"data":"00000000000000000000000000000000"}
+{"at":"2026-10-23T20:12:20.672Z","operation":"Path command 11","handle":2949563,"transport":0}
+{"at":"2026-10-23T20:12:20.678Z","operation":"Path command 11 reply","result":0,"objects":[],"moves":[],"copies":[],"data":"00000200000000000000000000000000"}
+{"at":"2026-10-23T20:12:20.692Z","operation":"Path command 7","handle":2949563,"transport":0}
+{"at":"2026-10-23T20:12:20.697Z","operation":"Path command 7 reply","result":514,"objects":[],"moves":[],"copies":[],"data":"00000000000000000000000000000000"}
+{"at":"2026-10-23T20:12:20.711Z","operation":"Path command 2","handle":2949563,"transport":0}
+{"at":"2026-10-23T20:12:20.716Z","operation":"Path command 2 reply","result":0,"objects":[],"moves":[],"copies":[],"data":"00000000000000000000000000000000"}
+{"at":"2026-10-23T20:12:20.732Z","operation":"Path command 0","handle":2916801,"transport":0}
+{"at":"2026-10-23T20:12:20.737Z","operation":"Path command 0 reply","result":0,"objects":[],"moves":[],"copies":[],"data":"00000000000000000000000100000000"}
+{"at":"2026-10-23T20:12:20.752Z","operation":"Path command 2","handle":2916801,"transport":0}
+{"at":"2026-10-23T20:12:20.758Z","operation":"Path command 2 reply","result":0,"objects":[],"moves":[],"copies":[],"data":"00000000000000000000000000000000"}
+{"at":"2026-10-23T20:12:20.771Z","operation":"Path command 2","handle":2916801,"transport":0}
+{"at":"2026-10-23T20:12:20.778Z","operation":"Path command 2 reply","result":0,"objects":[],"moves":[],"copies":[],"data":"00000000000000000000000000000000"}
+{"at":"2026-10-23T20:12:20.791Z","operation":"Path command 2","handle":2916801,"transport":0}
+{"at":"2026-10-23T20:12:20.797Z","operation":"Path command 2 reply","result":0,"objects":[],"moves":[],"copies":[],"data":"00000000000000000000000000000000"}
+{"at":"2026-10-23T20:12:20.818Z","operation":"Path command 2","handle":2916801,"transport":0}
+{"at":"2026-10-23T20:12:20.823Z","operation":"Path command 2 reply","result":0,"objects":[],"moves":[],"copies":[],"data":"00000000000000000000000000000000"}
+{"at":"2026-10-23T20:12:20.836Z","operation":"Path command 2","handle":2916801,"transport":0}
+{"at":"2026-10-23T20:12:20.841Z","operation":"Path command 2 reply","result":0,"objects":[],"moves":[],"copies":[],"data":"00000000000000000000000000000000"}
+{"at":"2026-10-23T20:12:20.856Z","operation":"Path command 2","handle":2916801,"transport":0}
+{"at":"2026-10-23T20:12:20.861Z","operation":"Path command 2 reply","result":0,"objects":[],"moves":[],"copies":[],"data":"00000000000000000000000000000000"}
+{"at":"2026-10-23T20:12:20.875Z","operation":"Path command 2","handle":2916801,"transport":0}
+{"at":"2026-10-23T20:12:20.881Z","operation":"Path command 2 reply","result":0,"objects":[],"moves":[],"copies":[],"data":"00000000000000000000000000000000"}
+{"at":"2026-10-23T20:12:20.898Z","operation":"Path command 2","handle":2916801,"transport":0}
+{"at":"2026-10-23T20:12:20.903Z","operation":"Path command 2 reply","result":0,"objects":[],"moves":[],"copies":[],"data":"00000000000000000000000000000000"}
+{"at":"2026-10-23T20:12:20.917Z","operation":"Path command 2","handle":2916801,"transport":0}
+{"at":"2026-10-23T20:12:20.922Z","operation":"Path command 2 reply","result":0,"objects":[],"moves":[],"copies":[],"data":"00000000000000000000000000000000"}
+{"at":"2026-10-23T20:12:20.937Z","operation":"Path command 2","handle":2916801,"transport":0}
+{"at":"2026-10-23T20:12:20.941Z","operation":"Path command 2 reply","result":0,"objects":[],"moves":[],"copies":[],"data":"00000000000000000000000000000000"}
+{"at":"2026-10-23T20:12:20.956Z","operation":"Path command 2","handle":2916801,"transport":0}
+{"at":"2026-10-23T20:12:20.961Z","operation":"Path command 2 reply","result":0,"objects":[],"moves":[],"copies":[],"data":"00000000000000000000000000000000"}
+{"at":"2026-10-23T20:12:20.975Z","operation":"Path command 2","handle":2916801,"transport":0}
+{"at":"2026-10-23T20:12:20.981Z","operation":"Path command 2 reply","result":0,"objects":[],"moves":[],"copies":[],"data":"00000000000000000000000000000000"}
+{"at":"2026-10-23T20:12:20.995Z","operation":"Path command 2","handle":2916801,"transport":0}
+{"at":"2026-10-23T20:12:21.001Z","operation":"Path command 2 reply","result":0,"objects":[],"moves":[],"copies":[],"data":"00000000000000000000000000000000"}
+{"at":"2026-10-23T20:12:21.014Z","operation":"Path command 2","handle":2916801,"transport":0}
+{"at":"2026-10-23T20:12:21.020Z","operation":"Path command 2 reply","result":0,"objects":[],"moves":[],"copies":[],"data":"00000000000000000000000000000000"}
+{"at":"2026-10-23T20:12:21.035Z","operation":"Path command 2","handle":2916801,"transport":0}
+{"at":"2026-10-23T20:12:21.041Z","operation":"Path command 2 reply","result":0,"objects":[],"moves":[],"copies":[],"data":"00000000000000000000000000000000"}
+{"at":"2026-10-23T20:12:21.055Z","operation":"Path command 2","handle":2916801,"transport":0}
+{"at":"2026-10-23T20:12:21.061Z","operation":"Path command 2 reply","result":0,"objects":[],"moves":[],"copies":[],"data":"00000000000000000000000000000000"}
+{"at":"2026-10-23T20:12:21.075Z","operation":"Path command 2","handle":2916801,"transport":0}
+{"at":"2026-10-23T20:12:21.081Z","operation":"Path command 2 reply","result":0,"objects":[],"moves":[],"copies":[],"data":"00000000000000000000000000000000"}
+{"at":"2026-10-23T20:12:21.095Z","operation":"Path command 2","handle":2916801,"transport":0}
+{"at":"2026-10-23T20:12:21.101Z","operation":"Path command 2 reply","result":0,"objects":[],"moves":[],"copies":[],"data":"00000000000000000000000000000000"}
+{"at":"2026-10-23T20:12:21.115Z","operation":"Path command 2","handle":2916801,"transport":0}
+{"at":"2026-10-23T20:12:21.120Z","operation":"Path command 2 reply","result":0,"objects":[],"moves":[],"copies":[],"data":"00000000000000000000000000000000"}
+{"at":"2026-10-23T20:12:21.133Z","operation":"Path command 2","handle":2916801,"transport":0}
+{"at":"2026-10-23T20:12:21.138Z","operation":"Path command 2 reply","result":0,"objects":[],"moves":[],"copies":[],"data":"00000000000000000000000000000000"}
+{"at":"2026-10-23T20:12:21.153Z","operation":"Path command 2","handle":2916801,"transport":0}
+{"at":"2026-10-23T20:12:21.158Z","operation":"Path command 2 reply","result":0,"objects":[],"moves":[],"copies":[],"data":"00000000000000000000000000000000"}
+{"at":"2026-10-23T20:12:21.172Z","operation":"Path command 2","handle":2916801,"transport":0}
+{"at":"2026-10-23T20:12:21.178Z","operation":"Path command 2 reply","result":0,"objects":[],"moves":[],"copies":[],"data":"00000000000000000000000000000000"}
+{"at":"2026-10-23T20:12:21.191Z","operation":"Path command 2","handle":2916801,"transport":0}
+{"at":"2026-10-23T20:12:21.197Z","operation":"Path command 2 reply","result":0,"objects":[],"moves":[],"copies":[],"data":"00000000000000000000000000000000"}
+{"at":"2026-10-23T20:12:21.211Z","operation":"Path command 2","handle":2916801,"transport":0}
+{"at":"2026-10-23T20:12:21.216Z","operation":"Path command 2 reply","result":0,"objects":[],"moves":[],"copies":[],"data":"00000000000000000000000000000000"}
+{"at":"2026-10-23T20:12:21.237Z","operation":"Path command 2","handle":2916801,"transport":0}
+{"at":"2026-10-23T20:12:21.250Z","operation":"Path command 2 reply","result":0,"objects":[],"moves":[],"copies":[],"data":"00000000000000000000000000000000"}
+{"at":"2026-10-23T20:12:21.272Z","operation":"Path command 2","handle":2916801,"transport":0}
+{"at":"2026-10-23T20:12:21.277Z","operation":"Path command 2 reply","result":0,"objects":[],"moves":[],"copies":[],"data":"00000000000000000000000000000000"}
+{"at":"2026-10-23T20:12:21.291Z","operation":"Path command 2","handle":2916801,"transport":0}
+{"at":"2026-10-23T20:12:21.298Z","operation":"Path command 2 reply","result":0,"objects":[],"moves":[],"copies":[],"data":"00000000000000000000000000000000"}
+{"at":"2026-10-23T20:12:21.311Z","operation":"Path command 2","handle":2916801,"transport":0}
+{"at":"2026-10-23T20:12:21.317Z","operation":"Path command 2 reply","result":0,"objects":[],"moves":[],"copies":[],"data":"00000000000000000000000000000000"}
+{"at":"2026-10-23T20:12:21.331Z","operation":"Path command 2","handle":2916801,"transport":0}
+{"at":"2026-10-23T20:12:21.336Z","operation":"Path command 2 reply","result":0,"objects":[],"moves":[],"copies":[],"data":"00000000000000000000000000000000"}
+{"at":"2026-10-23T20:12:21.350Z","operation":"Path command 2","handle":2916801,"transport":0}
+{"at":"2026-10-23T20:12:21.355Z","operation":"Path command 2 reply","result":0,"objects":[],"moves":[],"copies":[],"data":"00000000000000000000000000000000"}
+{"at":"2026-10-23T20:12:21.368Z","operation":"Path command 2","handle":2916801,"transport":0}
+{"at":"2026-10-23T20:12:21.373Z","operation":"Path command 2 reply","result":0,"objects":[],"moves":[],"copies":[],"data":"00000000000000000000000000000000"}
+{"at":"2026-10-23T20:12:21.387Z","operation":"Path command 2","handle":2916801,"transport":0}
+{"at":"2026-10-23T20:12:21.393Z","operation":"Path command 2 reply","result":0,"objects":[],"moves":[],"copies":[],"data":"00000000000000000000000000000000"}
+{"at":"2026-10-23T20:12:21.408Z","operation":"Path command 2","handle":2916801,"transport":0}
+{"at":"2026-10-23T20:12:21.414Z","operation":"Path command 2 reply","result":0,"objects":[],"moves":[],"copies":[],"data":"00000000000000000000000000000000"}
+{"at":"2026-10-23T20:12:21.428Z","operation":"Path command 2","handle":2916801,"transport":0}
+{"at":"2026-10-23T20:12:21.433Z","operation":"Path command 2 reply","result":0,"objects":[],"moves":[],"copies":[],"data":"00000000000000000000000000000000"}
+{"at":"2026-10-23T20:12:21.449Z","operation":"Path command 2","handle":2916801,"transport":0}
+{"at":"2026-10-23T20:12:21.455Z","operation":"Path command 2 reply","result":0,"objects":[],"moves":[],"copies":[],"data":"00000000000000000000000000000000"}
+{"at":"2026-10-23T20:12:21.470Z","operation":"Path command 2","handle":2916801,"transport":0}
+{"at":"2026-10-23T20:12:21.475Z","operation":"Path command 2 reply","result":0,"objects":[],"moves":[],"copies":[],"data":"00000000000000000000000000000000"}
+{"at":"2026-10-23T20:12:21.496Z","operation":"Path command 2","handle":2916801,"transport":0}
+{"at":"2026-10-23T20:12:21.501Z","operation":"Path command 2 reply","result":0,"objects":[],"moves":[],"copies":[],"data":"00000000000000000000000000000000"}
+{"at":"2026-10-23T20:12:21.515Z","operation":"Path command 2","handle":2916801,"transport":0}
+{"at":"2026-10-23T20:12:21.521Z","operation":"Path command 2 reply","result":0,"objects":[],"moves":[],"copies":[],"data":"00000000000000000000000000000000"}
+{"at":"2026-10-23T20:12:21.534Z","operation":"Path command 2","handle":2916801,"transport":0}
+{"at":"2026-10-23T20:12:21.540Z","operation":"Path command 2 reply","result":0,"objects":[],"moves":[],"copies":[],"data":"00000000000000000000000000000000"}
+{"at":"2026-10-23T20:12:21.555Z","operation":"Path command 2","handle":2916801,"transport":0}
+{"at":"2026-10-23T20:12:21.561Z","operation":"Path command 2 reply","result":0,"objects":[],"moves":[],"copies":[],"data":"00000000000000000000000000000000"}
+{"at":"2026-10-23T20:12:21.574Z","operation":"Path command 2","handle":2916801,"transport":0}
+{"at":"2026-10-23T20:12:21.579Z","operation":"Path command 2 reply","result":0,"objects":[],"moves":[],"copies":[],"data":"00000000000000000000000000000000"}
+{"at":"2026-10-23T20:12:21.592Z","operation":"Path command 2","handle":2916801,"transport":0}
+{"at":"2026-10-23T20:12:21.597Z","operation":"Path command 2 reply","result":0,"objects":[],"moves":[],"copies":[],"data":"00000000000000000000000000000000"}
+{"at":"2026-10-23T20:12:21.611Z","operation":"Path command 2","handle":2916801,"transport":0}
+{"at":"2026-10-23T20:12:21.616Z","operation":"Path command 2 reply","result":0,"objects":[],"moves":[],"copies":[],"data":"00000000000000000000000000000000"}
+{"at":"2026-10-23T20:12:21.632Z","operation":"Path command 0","handle":2916801,"transport":0}
+{"at":"2026-10-23T20:12:21.637Z","operation":"Path command 0 reply","result":0,"objects":[],"moves":[],"copies":[],"data":"00000000000000000100000000000000"}
+{"at":"2026-10-23T20:12:21.651Z","operation":"Path command 7","handle":2916801,"transport":0}
+{"at":"2026-10-23T20:12:21.656Z","operation":"Path command 7 reply","result":0,"objects":[],"moves":[],"copies":[],"data":"01000000000000000000000000000000"}
+{"at":"2026-10-23T20:12:21.669Z","operation":"Path command 7","handle":2916801,"transport":0}
+{"at":"2026-10-23T20:12:21.675Z","operation":"Path command 7 reply","result":3074562,"objects":[],"moves":[],"copies":[],"data":"00000000000000000000000000000000"}
+{"at":"2026-10-23T20:12:21.688Z","operation":"Path command 2","handle":2916801,"transport":0}
+{"at":"2026-10-23T20:12:21.693Z","operation":"Path command 2 reply","result":0,"objects":[],"moves":[],"copies":[],"data":"00000000000000000000000000000000"}
+{"at":"2026-10-23T20:12:21.706Z","operation":"Path command 2","handle":2949563,"transport":0}
+{"at":"2026-10-23T20:12:21.711Z","operation":"Path command 2 reply","result":0,"objects":[],"moves":[],"copies":[],"data":"00000000000000000000000000000000"}
+{"at":"2026-10-23T20:12:21.724Z","operation":"Path command 2","handle":2949563,"transport":0}
+{"at":"2026-10-23T20:12:21.730Z","operation":"Path command 2 reply","result":0,"objects":[],"moves":[],"copies":[],"data":"00000000000000000000000000000000"}
+{"at":"2026-10-23T20:12:21.743Z","operation":"Path command 2","handle":2949563,"transport":0}
+{"at":"2026-10-23T20:12:21.749Z","operation":"Path command 2 reply","result":0,"objects":[],"moves":[],"copies":[],"data":"00000000000000000000000000000000"}
+{"at":"2026-10-23T20:12:21.766Z","operation":"Path command 0","handle":2949563,"transport":0}
+{"at":"2026-10-23T20:12:21.772Z","operation":"Path command 0 reply","result":0,"objects":[],"moves":[],"copies":[],"data":"00000000000000000100000000000000"}
+{"at":"2026-10-23T20:12:21.789Z","operation":"Open own gap content","handle":2982330,"command":200,"transport":0}
+{"at":"2026-10-23T20:12:21.794Z","operation":"Open own gap content reply","result":0,"copies":[],"moves":[3047864],"interfaceId":2113097426,"data":"0000000000000000000000000000000000000000000000000000000000000000"}
+{"at":"2026-10-23T20:12:21.803Z","operation":"StorageGetSize","handle":3047864,"command":4,"transport":0}
+{"at":"2026-10-23T20:12:21.808Z","operation":"StorageGetSize reply","result":0,"copies":[],"moves":[],"interfaceId":3302148843,"data":"88e3a10800000000000000000000000000000000000000000000000000000000"}
+{"at":"2026-10-23T20:12:21.817Z","operation":"StorageGetSize","handle":3015097,"command":4,"transport":0}
+{"at":"2026-10-23T20:12:21.822Z","operation":"StorageGetSize reply","result":0,"copies":[],"moves":[],"interfaceId":3302148843,"data":"88e3a10800000000000000000000000000000000000000000000000000000000"}
+{"at":"2026-10-23T20:12:21.831Z","operation":"Clone gap client","handle":2916801,"transport":0}
+{"at":"2026-10-23T20:12:21.836Z","operation":"Clone gap client reply","result":0,"objects":[],"moves":[3080631],"copies":[],"data":"00000000000000000000000000000000"}
+{"at":"2026-10-23T20:12:21.844Z","operation":"Clone gap client","handle":2982330,"transport":0}
+{"at":"2026-10-23T20:12:21.850Z","operation":"Clone gap client reply","result":0,"objects":[],"moves":[3113398],"copies":[],"data":"00000000000000000000000000000000"}
+{"at":"2026-10-23T20:12:21.859Z","operation":"Clone gap client","handle":2982330,"transport":0}
+{"at":"2026-10-23T20:12:21.865Z","operation":"Clone gap client reply","result":0,"objects":[],"moves":[3146165],"copies":[],"data":"00000000000000000000000000000000"}
+{"at":"2026-10-23T20:12:21.873Z","operation":"Clone gap client","handle":2982330,"transport":0}
+{"at":"2026-10-23T20:12:21.878Z","operation":"Clone gap client reply","result":0,"objects":[],"moves":[3178932],"copies":[],"data":"00000000000000000000000000000000"}
+{"at":"2026-10-23T20:12:21.887Z","operation":"Clone gap client","handle":2982330,"transport":0}
+{"at":"2026-10-23T20:12:21.892Z","operation":"Clone gap client reply","result":0,"objects":[],"moves":[3211699],"copies":[],"data":"00000000000000000000000000000000"}
+{"at":"2026-10-23T20:12:21.915Z","operation":"Clone gap client","handle":2916801,"transport":0}
+{"at":"2026-10-23T20:12:21.921Z","operation":"Clone gap client reply","result":0,"objects":[],"moves":[3244466],"copies":[],"data":"00000000000000000000000000000000"}
+{"at":"2026-10-23T20:12:21.931Z","operation":"Clone gap client","handle":2916801,"transport":0}
+{"at":"2026-10-23T20:12:21.936Z","operation":"Clone gap client reply","result":0,"objects":[],"moves":[3277233],"copies":[],"data":"00000000000000000000000000000000"}
+{"at":"2026-10-23T20:12:21.944Z","operation":"Clone gap client","handle":2916801,"transport":0}
+{"at":"2026-10-23T20:12:21.950Z","operation":"Clone gap client reply","result":0,"objects":[],"moves":[3310000],"copies":[],"data":"00000000000000000000000000000000"}
+{"at":"2026-10-23T20:12:21.958Z","operation":"Clone gap client","handle":2916801,"transport":0}
+{"at":"2026-10-23T20:12:21.964Z","operation":"Clone gap client reply","result":0,"objects":[],"moves":[3342767],"copies":[],"data":"00000000000000000000000000000000"}
+{"at":"2026-10-23T20:12:21.972Z","operation":"Clone gap client","handle":2916801,"transport":0}
+{"at":"2026-10-23T20:12:21.978Z","operation":"Clone gap client reply","result":0,"objects":[],"moves":[3375534],"copies":[],"data":"00000000000000000000000000000000"}
+{"at":"2026-10-23T20:12:21.986Z","operation":"Clone gap client","handle":2916801,"transport":0}
+{"at":"2026-10-23T20:12:21.991Z","operation":"Clone gap client reply","result":0,"objects":[],"moves":[3408301],"copies":[],"data":"00000000000000000000000000000000"}
+{"at":"2026-10-23T20:12:22.000Z","operation":"Clone gap client","handle":2949563,"transport":0}
+{"at":"2026-10-23T20:12:22.005Z","operation":"Clone gap client reply","result":0,"objects":[],"moves":[3441068],"copies":[],"data":"00000000000000000000000000000000"}
+{"at":"2026-10-23T20:12:22.079Z","operation":"Ordinary gap path control","handle":2916801,"transport":0}
+{"at":"2026-10-23T20:12:22.085Z","operation":"Ordinary gap path control reply","result":514,"objects":[],"moves":[],"copies":[],"data":"00000000000000000500000000000000"}
+{"at":"2026-10-23T20:12:22.094Z","operation":"Ordinary gap path control","handle":2916801,"transport":0}
+{"at":"2026-10-23T20:12:22.100Z","operation":"Ordinary gap path control reply","result":514,"objects":[],"moves":[],"copies":[],"data":"00000000000000000500000000000000"}
+{"at":"2026-10-23T20:12:22.112Z","operation":"Reserve own gap content 0","handle":2982330,"command":200,"transport":0}
+{"at":"2026-10-23T20:12:22.118Z","operation":"Reserve own gap content 0 reply","result":0,"copies":[],"moves":[3473835],"interfaceId":2113097426,"data":"0000000000000000000000000000000000000000000000000000000000000000"}
+{"at":"2026-10-23T20:12:22.155Z","operation":"Path command 8","handle":2916801,"transport":0}
+{"at":"2026-10-23T20:12:22.160Z","operation":"Path command 8 reply","result":0,"objects":[],"moves":[3506602],"copies":[],"data":"00000000000000000000000000000000"}
+{"at":"2026-10-23T20:12:22.278Z","operation":"Dirty gap commit data","handle":3506602,"command":1,"transport":0}
+{"at":"2026-10-23T20:12:22.284Z","operation":"Dirty gap commit data reply","result":0,"copies":[],"moves":[],"interfaceId":4084297121,"data":"0000000000000000010000000000000000000000000000000000000000000000"}
+{"at":"2026-10-23T20:12:22.288Z","operation":"CloseHandle","handle":3506602,"result":0}
+{"at":"2026-10-23T20:12:22.367Z","operation":"timing","stage":"inputs:abort-control","passed":true,"elapsedMs":78.95400000000018,"requests":5}
+{"at":"2026-10-23T20:12:22.386Z","operation":"GetService","name":"fsp-srv","result":0,"handle":3539370}
+{"at":"2026-10-23T20:12:22.395Z","operation":"Gap manager group SetCurrentProcess","handle":3539370,"command":1,"transport":0}
+{"at":"2026-10-23T20:12:22.401Z","operation":"Gap manager group SetCurrentProcess reply","result":0,"copies":[],"moves":[],"interfaceId":2113097426,"data":"0000000000000000010000000000000000000000000000000000000000000000"}
+{"at":"2026-10-23T20:12:22.409Z","operation":"Gap manager group ConvertToDomain","handle":3539370,"transport":0}
+{"at":"2026-10-23T20:12:22.415Z","operation":"Gap manager group ConvertToDomain reply","result":0,"objects":[],"moves":[],"copies":[],"data":"8c000000000000000000000000000000"}
+{"at":"2026-10-23T20:12:22.423Z","operation":"Gap manager group CopyObject","handle":3539370,"transport":0}
+{"at":"2026-10-23T20:12:22.429Z","operation":"Gap manager group CopyObject reply","result":0,"objects":[],"moves":[3572137],"copies":[],"data":"00000000000000000000000000000000"}
+{"at":"2026-10-23T20:12:22.437Z","operation":"Read gap allocation counters","handle":2982330,"command":1009,"transport":0}
+{"at":"2026-10-23T20:12:22.443Z","operation":"Read gap allocation counters reply","result":0,"copies":[],"moves":[],"interfaceId":2113097426,"data":"00c0080100000000000000000000000000000000000000000000000000000000"}
+{"at":"2026-10-23T20:12:22.458Z","operation":"Read gap allocation counters","handle":2982330,"command":1009,"transport":0}
+{"at":"2026-10-23T20:12:22.466Z","operation":"Read gap allocation counters reply","result":0,"copies":[],"moves":[],"interfaceId":2113097426,"data":"00c05e0100000000000000000000000000000000000000000040070000000000"}
+{"at":"2026-10-23T20:12:22.937Z","operation":"Read gap allocation counters","handle":2982330,"command":1009,"transport":0}
+{"at":"2026-10-23T20:12:22.943Z","operation":"Read gap allocation counters reply","result":0,"copies":[],"moves":[],"interfaceId":2113097426,"data":"00c05e0100000000000000000000000000000000000000000040070000000000"}
+{"at":"2026-10-23T20:12:22.952Z","operation":"Read gap allocation counters","handle":2982330,"command":1009,"transport":0}
+{"at":"2026-10-23T20:12:22.958Z","operation":"Read gap allocation counters reply","result":0,"copies":[],"moves":[],"interfaceId":2113097426,"data":"00c05e0100000000000000000000000000000000000000000040070000000000"}
+{"at":"2026-10-23T20:12:22.968Z","operation":"Wrap gap group","handle":3539370,"transport":0}
+{"at":"2026-10-23T20:12:22.974Z","operation":"Wrap gap group reply","result":0,"objects":[],"moves":[],"copies":[],"data":"d0000000000000000000000000000000"}
+{"at":"2026-10-23T20:12:22.984Z","operation":"timing","stage":"reservation:abort-control","passed":true,"elapsedMs":610.7817,"requests":24}
+{"at":"2026-10-23T20:12:23.000Z","operation":"timing","stage":"requests:abort-control","passed":true,"elapsedMs":15.677200000000084,"requests":0}
+{"at":"2026-10-23T20:12:23.037Z","operation":"workerPrepared","label":"reserved-gap-1792786340157-0","base":153434697728,"slot":153433657344,"bytes":94208,"logicalCalls":6,"nativeCalls":6,"resultOffsets":[2048,2056,2064,2072,2080,2088],"logicalResultIndices":[0,1,2,3,4,5],"resultOffset":2088,"stackOffset":73728,"tablesOffset":4096,"frameSha256":"f3fa9b1e2da07168a007cedf170b13f95e985f0565ad3a5acaf004989d7066d0"}
+{"at":"2026-10-23T20:12:23.057Z","operation":"workerStarted","label":"reserved-gap-1792786340157-0","thread":153087025152,"base":153434697728}
+{"at":"2026-10-23T20:12:23.098Z","operation":"workerPrepared","label":"reserved-gap-1792786340157-1","base":153434959872,"slot":153433657360,"bytes":94208,"logicalCalls":7,"nativeCalls":7,"resultOffsets":[2048,2056,2064,2072,2080,2088,2096],"logicalResultIndices":[0,1,2,3,4,5,6],"resultOffset":2096,"stackOffset":73728,"tablesOffset":4096,"frameSha256":"2bdc60ac62705141912815511561d1e21ca52870bf9175f7f9d41324f32e0dcc"}
+{"at":"2026-10-23T20:12:23.117Z","operation":"workerStarted","label":"reserved-gap-1792786340157-1","thread":153087119360,"base":153434959872}
+{"at":"2026-10-23T20:12:23.151Z","operation":"workerPrepared","label":"reserved-gap-1792786340157-2","base":153435222016,"slot":153433657376,"bytes":94208,"logicalCalls":6,"nativeCalls":6,"resultOffsets":[2048,2056,2064,2072,2080,2088],"logicalResultIndices":[0,1,2,3,4,5],"resultOffset":2088,"stackOffset":73728,"tablesOffset":4096,"frameSha256":"bb78017884bab54a3120d1642c796bcae7d23830fccd8327d953389647b328b6"}
+{"at":"2026-10-23T20:12:23.168Z","operation":"workerStarted","label":"reserved-gap-1792786340157-2","thread":153087213568,"base":153435222016}
+{"at":"2026-10-23T20:12:23.202Z","operation":"workerPrepared","label":"reserved-gap-1792786340157-3","base":153435484160,"slot":153433657392,"bytes":94208,"logicalCalls":6,"nativeCalls":6,"resultOffsets":[2048,2056,2064,2072,2080,2088],"logicalResultIndices":[0,1,2,3,4,5],"resultOffset":2088,"stackOffset":73728,"tablesOffset":4096,"frameSha256":"c8dc03196dfa0a5275f517c5fe03b1de3787b0263a8260322b674d3f9886c5bc"}
+{"at":"2026-10-23T20:12:23.220Z","operation":"workerStarted","label":"reserved-gap-1792786340157-3","thread":153087311872,"base":153435484160}
+{"at":"2026-10-23T20:12:23.254Z","operation":"workerPrepared","label":"reserved-gap-1792786340157-4","base":153435746304,"slot":153433657408,"bytes":94208,"logicalCalls":6,"nativeCalls":6,"resultOffsets":[2048,2056,2064,2072,2080,2088],"logicalResultIndices":[0,1,2,3,4,5],"resultOffset":2088,"stackOffset":73728,"tablesOffset":4096,"frameSha256":"280d521d850885491b05310d2210c09d04ef60cb0203c2bd201731c29f939ad1"}
+{"at":"2026-10-23T20:12:23.274Z","operation":"workerStarted","label":"reserved-gap-1792786340157-4","thread":153087406080,"base":153435746304}
+{"at":"2026-10-23T20:12:23.308Z","operation":"workerPrepared","label":"reserved-gap-1792786340157-5","base":153436008448,"slot":153433657424,"bytes":94208,"logicalCalls":6,"nativeCalls":6,"resultOffsets":[2048,2056,2064,2072,2080,2088],"logicalResultIndices":[0,1,2,3,4,5],"resultOffset":2088,"stackOffset":73728,"tablesOffset":4096,"frameSha256":"3c3d6fa8f5e8152ccd7ce5988f0ef276acea0d730212f8b19411d64c0540d1f7"}
+{"at":"2026-10-23T20:12:23.327Z","operation":"workerStarted","label":"reserved-gap-1792786340157-5","thread":153087500288,"base":153436008448}
+{"at":"2026-10-23T20:12:23.360Z","operation":"workerPrepared","label":"reserved-gap-1792786340157-6","base":153436270592,"slot":153433657440,"bytes":94208,"logicalCalls":6,"nativeCalls":6,"resultOffsets":[2048,2056,2064,2072,2080,2088],"logicalResultIndices":[0,1,2,3,4,5],"resultOffset":2088,"stackOffset":73728,"tablesOffset":4096,"frameSha256":"3834e6e0fb61eb7f75708f6a9546a1b7e978ba91304f41af4510bbd3246202a5"}
+{"at":"2026-10-23T20:12:23.379Z","operation":"workerStarted","label":"reserved-gap-1792786340157-6","thread":153087594496,"base":153436270592}
+{"at":"2026-10-23T20:12:23.415Z","operation":"workerPrepared","label":"reserved-gap-1792786340157-7","base":153436532736,"slot":153433657456,"bytes":94208,"logicalCalls":6,"nativeCalls":6,"resultOffsets":[2048,2056,2064,2072,2080,2088],"logicalResultIndices":[0,1,2,3,4,5],"resultOffset":2088,"stackOffset":73728,"tablesOffset":4096,"frameSha256":"820ee569172cbcf03c32da0b1ebeb96d879199d797fea01cfcfe969936846afd"}
+{"at":"2026-10-23T20:12:23.433Z","operation":"workerStarted","label":"reserved-gap-1792786340157-7","thread":153087688704,"base":153436532736}
+{"at":"2026-10-23T20:12:23.466Z","operation":"workerPrepared","label":"reserved-gap-1792786340157-8","base":153436794880,"slot":153433657472,"bytes":94208,"logicalCalls":6,"nativeCalls":6,"resultOffsets":[2048,2056,2064,2072,2080,2088],"logicalResultIndices":[0,1,2,3,4,5],"resultOffset":2088,"stackOffset":73728,"tablesOffset":4096,"frameSha256":"7d406564a1896157f6513db6d2f3c45e852704e870e0c57c0f7dcb8f6792fe7c"}
+{"at":"2026-10-23T20:12:23.485Z","operation":"workerStarted","label":"reserved-gap-1792786340157-8","thread":153087782912,"base":153436794880}
+{"at":"2026-10-23T20:12:23.519Z","operation":"workerPrepared","label":"reserved-gap-1792786340157-9","base":153437057024,"slot":153433657488,"bytes":98304,"logicalCalls":15,"nativeCalls":16,"resultOffsets":[2048,2056,2064,2072,2080,2088,2096,2104,2112,2120,2128,2136,2144,2152,2160,2168],"logicalResultIndices":[0,1,2,3,4,5,6,7,8,9,10,11,13,14,15],"resultOffset":2168,"stackOffset":73728,"tablesOffset":4096,"frameSha256":"5ffb084ecf1be771ffa1ca8839e93ccc657d015a75cfa92941a3bdb711d8715e"}
+{"at":"2026-10-23T20:12:23.536Z","operation":"workerStarted","label":"reserved-gap-1792786340157-9","thread":153087877120,"base":153437057024}
+{"at":"2026-10-23T20:12:23.571Z","operation":"workerPrepared","label":"reserved-gap-1792786340157-10","base":153437319168,"slot":153433657504,"bytes":94208,"logicalCalls":7,"nativeCalls":7,"resultOffsets":[2048,2056,2064,2072,2080,2088,2096],"logicalResultIndices":[0,1,2,3,4,5,6],"resultOffset":2096,"stackOffset":73728,"tablesOffset":4096,"frameSha256":"fb322dec88317c36878d1400d3b1f0dfe102648319fe9e495cac763788c09a8a"}
+{"at":"2026-10-23T20:12:23.589Z","operation":"workerStarted","label":"reserved-gap-1792786340157-10","thread":153087971328,"base":153437319168}
+{"at":"2026-10-23T20:12:23.622Z","operation":"workerPrepared","label":"reserved-gap-1792786340157-11","base":153437581312,"slot":153433657520,"bytes":94208,"logicalCalls":9,"nativeCalls":9,"resultOffsets":[2048,2056,2064,2072,2080,2088,2096,2104,2112],"logicalResultIndices":[0,1,2,3,4,5,6,7,8],"resultOffset":2112,"stackOffset":73728,"tablesOffset":4096,"frameSha256":"7f34dea41293199bff35f9fe87699309473c1b6a618d420e15a820ae35879937"}
+{"at":"2026-10-23T20:12:23.648Z","operation":"workerStarted","label":"reserved-gap-1792786340157-11","thread":153088065536,"base":153437581312}
+{"at":"2026-10-23T20:12:23.686Z","operation":"workerPrepared","label":"reserved-gap-1792786340157-12","base":153437843456,"slot":153433657536,"bytes":102400,"logicalCalls":15,"nativeCalls":19,"resultOffsets":[2048,2056,2064,2072,2080,2088,2096,2104,2112,2120,2128,2136,2144,2152,2160,2168,2176,2184,2192],"logicalResultIndices":[0,1,2,3,4,5,6,7,8,10,12,14,15,17,18],"resultOffset":2192,"stackOffset":77824,"tablesOffset":4096,"frameSha256":"9ac0cda5086d10c9693ec3f6c330670548589eabb3279de5e8f3c5a63f901690"}
+{"at":"2026-10-23T20:12:23.705Z","operation":"workerStarted","label":"reserved-gap-1792786340157-12","thread":153088159744,"base":153437843456}
+{"at":"2026-10-23T20:12:23.726Z","operation":"workerAffinitySet","label":"reserved-gap-1792786340157-0","thread":153087025152,"before":"1","requested":"1","result":0}
+{"at":"2026-10-23T20:12:23.738Z","operation":"workerAffinity","label":"reserved-gap-1792786340157-0","thread":153087025152,"before":"1","after":"1"}
+{"at":"2026-10-23T20:12:23.760Z","operation":"workerAffinitySet","label":"reserved-gap-1792786340157-1","thread":153087119360,"before":"1","requested":"2","result":0}
+{"at":"2026-10-23T20:12:23.773Z","operation":"workerAffinity","label":"reserved-gap-1792786340157-1","thread":153087119360,"before":"1","after":"2"}
+{"at":"2026-10-23T20:12:23.794Z","operation":"workerAffinitySet","label":"reserved-gap-1792786340157-2","thread":153087213568,"before":"1","requested":"4","result":0}
+{"at":"2026-10-23T20:12:23.807Z","operation":"workerAffinity","label":"reserved-gap-1792786340157-2","thread":153087213568,"before":"1","after":"4"}
+{"at":"2026-10-23T20:12:23.834Z","operation":"workerAffinitySet","label":"reserved-gap-1792786340157-3","thread":153087311872,"before":"1","requested":"1","result":0}
+{"at":"2026-10-23T20:12:23.847Z","operation":"workerAffinity","label":"reserved-gap-1792786340157-3","thread":153087311872,"before":"1","after":"1"}
+{"at":"2026-10-23T20:12:23.868Z","operation":"workerAffinitySet","label":"reserved-gap-1792786340157-4","thread":153087406080,"before":"1","requested":"2","result":0}
+{"at":"2026-10-23T20:12:23.881Z","operation":"workerAffinity","label":"reserved-gap-1792786340157-4","thread":153087406080,"before":"1","after":"2"}
+{"at":"2026-10-23T20:12:23.902Z","operation":"workerAffinitySet","label":"reserved-gap-1792786340157-5","thread":153087500288,"before":"1","requested":"4","result":0}
+{"at":"2026-10-23T20:12:23.915Z","operation":"workerAffinity","label":"reserved-gap-1792786340157-5","thread":153087500288,"before":"1","after":"4"}
+{"at":"2026-10-23T20:12:23.936Z","operation":"workerAffinitySet","label":"reserved-gap-1792786340157-6","thread":153087594496,"before":"1","requested":"1","result":0}
+{"at":"2026-10-23T20:12:23.949Z","operation":"workerAffinity","label":"reserved-gap-1792786340157-6","thread":153087594496,"before":"1","after":"1"}
+{"at":"2026-10-23T20:12:23.970Z","operation":"workerAffinitySet","label":"reserved-gap-1792786340157-7","thread":153087688704,"before":"1","requested":"2","result":0}
+{"at":"2026-10-23T20:12:23.983Z","operation":"workerAffinity","label":"reserved-gap-1792786340157-7","thread":153087688704,"before":"1","after":"2"}
+{"at":"2026-10-23T20:12:24.005Z","operation":"workerAffinitySet","label":"reserved-gap-1792786340157-8","thread":153087782912,"before":"1","requested":"4","result":0}
+{"at":"2026-10-23T20:12:24.020Z","operation":"workerAffinity","label":"reserved-gap-1792786340157-8","thread":153087782912,"before":"1","after":"4"}
+{"at":"2026-10-23T20:12:24.042Z","operation":"workerAffinitySet","label":"reserved-gap-1792786340157-9","thread":153087877120,"before":"1","requested":"1","result":0}
+{"at":"2026-10-23T20:12:24.055Z","operation":"workerAffinity","label":"reserved-gap-1792786340157-9","thread":153087877120,"before":"1","after":"1"}
+{"at":"2026-10-23T20:12:24.077Z","operation":"workerAffinitySet","label":"reserved-gap-1792786340157-10","thread":153087971328,"before":"1","requested":"2","result":0}
+{"at":"2026-10-23T20:12:24.090Z","operation":"workerAffinity","label":"reserved-gap-1792786340157-10","thread":153087971328,"before":"1","after":"2"}
+{"at":"2026-10-23T20:12:24.111Z","operation":"workerAffinitySet","label":"reserved-gap-1792786340157-11","thread":153088065536,"before":"1","requested":"4","result":0}
+{"at":"2026-10-23T20:12:24.124Z","operation":"workerAffinity","label":"reserved-gap-1792786340157-11","thread":153088065536,"before":"1","after":"4"}
+{"at":"2026-10-23T20:12:24.146Z","operation":"workerAffinitySet","label":"reserved-gap-1792786340157-12","thread":153088159744,"before":"1","requested":"1","result":0}
+{"at":"2026-10-23T20:12:24.160Z","operation":"workerAffinity","label":"reserved-gap-1792786340157-12","thread":153088159744,"before":"1","after":"1"}
+{"at":"2026-10-23T20:12:24.160Z","operation":"timing","stage":"workers:abort-control","passed":true,"elapsedMs":1159.6544999999996,"requests":235}
+{"at":"2026-10-23T20:12:24.212Z","operation":"workerJoined","label":"reserved-gap-1792786340157-0","thread":153087025152,"values":["0","0","3816112703","0","3816764135","153433659912"],"nativeCalls":6}
+{"at":"2026-10-23T20:12:24.228Z","operation":"workerJoined","label":"reserved-gap-1792786340157-1","thread":153087119360,"values":["0","0","3816122542","0","3816728401","153433659920","153433661456"],"nativeCalls":7}
+{"at":"2026-10-23T20:12:24.244Z","operation":"workerJoined","label":"reserved-gap-1792786340157-2","thread":153087213568,"values":["0","0","3816123349","0","3816768037","153433659912"],"nativeCalls":6}
+{"at":"2026-10-23T20:12:24.260Z","operation":"workerJoined","label":"reserved-gap-1792786340157-3","thread":153087311872,"values":["0","0","3816126580","0","3816770010","153433659912"],"nativeCalls":6}
+{"at":"2026-10-23T20:12:24.275Z","operation":"workerJoined","label":"reserved-gap-1792786340157-4","thread":153087406080,"values":["0","0","3816130437","0","3816771647","153433659912"],"nativeCalls":6}
+{"at":"2026-10-23T20:12:24.291Z","operation":"workerJoined","label":"reserved-gap-1792786340157-5","thread":153087500288,"values":["0","0","3816132823","0","3816773222","153433659912"],"nativeCalls":6}
+{"at":"2026-10-23T20:12:24.307Z","operation":"workerJoined","label":"reserved-gap-1792786340157-6","thread":153087594496,"values":["0","0","3816165710","0","3816759940","153433659912"],"nativeCalls":6}
+{"at":"2026-10-23T20:12:24.323Z","operation":"workerJoined","label":"reserved-gap-1792786340157-7","thread":153087688704,"values":["0","0","3816175807","0","3816762508","153433659912"],"nativeCalls":6}
+{"at":"2026-10-23T20:12:24.338Z","operation":"workerJoined","label":"reserved-gap-1792786340157-8","thread":153087782912,"values":["0","0","3816179762","0","3816760812","153433659912"],"nativeCalls":6}
+{"at":"2026-10-23T20:12:24.354Z","operation":"workerJoined","label":"reserved-gap-1792786340157-9","thread":153087877120,"values":["0","0","3816200123","0","3816696498","3816696498","0","3816699013","3816699021","0","3816706002","3816706004","0","3816712025","0"],"nativeCalls":16}
+{"at":"2026-10-23T20:12:24.370Z","operation":"workerJoined","label":"reserved-gap-1792786340157-10","thread":153087971328,"values":["0","0","0","3816712222","0","3816763176","153433659912"],"nativeCalls":7}
+{"at":"2026-10-23T20:12:24.386Z","operation":"workerJoined","label":"reserved-gap-1792786340157-11","thread":153088065536,"values":["0","0","0","153433659924","0","3816717083","0","3816763787","153433659912"],"nativeCalls":9}
+{"at":"2026-10-23T20:12:24.402Z","operation":"workerJoined","label":"reserved-gap-1792786340157-12","thread":153088159744,"values":["0","0","0","0","0","153433659936","153433661456","153433659916","153433659928","153433845760","153433845760","153433845760","3816729720","0","3816730637"],"nativeCalls":19}
+{"at":"2026-10-23T20:12:24.402Z","operation":"timing","stage":"join:abort-control","passed":true,"elapsedMs":238.12400000000025,"requests":53}
+{"at":"2026-10-23T20:12:24.491Z","operation":"timing","stage":"replies:abort-control","passed":true,"elapsedMs":88.56370000000061,"requests":16}
+{"at":"2026-10-23T20:12:24.500Z","operation":"Read gap allocation counters","handle":2982330,"command":1009,"transport":0}
+{"at":"2026-10-23T20:12:24.505Z","operation":"Read gap allocation counters reply","result":0,"copies":[],"moves":[],"interfaceId":2113097426,"data":"00304f01000000000000000000000000000000000000000000c01d0000000000"}
+{"at":"2026-10-23T20:12:24.513Z","operation":"Read gap allocation counters","handle":2982330,"command":1009,"transport":0}
+{"at":"2026-10-23T20:12:24.519Z","operation":"Read gap allocation counters reply","result":0,"copies":[],"moves":[],"interfaceId":2113097426,"data":"00c05e01000000000000000000000000000000000000000000c01d0000000000"}
+{"at":"2026-10-23T20:12:24.531Z","operation":"CloseHandle","handle":3572137,"result":0}
+{"at":"2026-10-23T20:12:24.534Z","operation":"CloseHandle","handle":3539370,"result":0}
+{"at":"2026-10-23T20:12:24.548Z","operation":"Path command 4","handle":2949563,"transport":0}
+{"at":"2026-10-23T20:12:24.553Z","operation":"Path command 4 reply","result":0,"objects":[],"moves":[],"copies":[],"data":"00000000000000000000000000000000"}
+{"at":"2026-10-23T20:12:24.586Z","operation":"Commit gap scratch removal","handle":2949563,"command":10,"transport":0}
+{"at":"2026-10-23T20:12:24.592Z","operation":"Commit gap scratch removal reply","result":0,"copies":[],"moves":[],"interfaceId":3572128231,"data":"0000000000000000000000000000000000000000000000000000000000000000"}
+{"at":"2026-10-23T20:12:24.609Z","operation":"Path command 7","handle":2949563,"transport":0}
+{"at":"2026-10-23T20:12:24.616Z","operation":"Path command 7 reply","result":514,"objects":[],"moves":[],"copies":[],"data":"00000000000000000000000000000000"}
+{"at":"2026-10-23T20:12:24.640Z","operation":"Path command 4","handle":2916801,"transport":0}
+{"at":"2026-10-23T20:12:24.646Z","operation":"Path command 4 reply","result":0,"objects":[],"moves":[],"copies":[],"data":"00000000000000000000000000000000"}
+{"at":"2026-10-23T20:12:24.662Z","operation":"Commit gap scratch removal","handle":2916801,"command":10,"transport":0}
+{"at":"2026-10-23T20:12:24.667Z","operation":"Commit gap scratch removal reply","result":0,"copies":[],"moves":[],"interfaceId":3572128231,"data":"0000000000000000000000000000000000000000000000000000000000000000"}
+{"at":"2026-10-23T20:12:24.681Z","operation":"Path command 7","handle":2916801,"transport":0}
+{"at":"2026-10-23T20:12:24.686Z","operation":"Path command 7 reply","result":514,"objects":[],"moves":[],"copies":[],"data":"00000000000000000000000000000000"}
+{"at":"2026-10-23T20:12:24.701Z","operation":"CloseHandle","handle":4030875,"result":0}
+{"at":"2026-10-23T20:12:24.704Z","operation":"CloseHandle","handle":3473835,"result":0}
+{"at":"2026-10-23T20:12:24.707Z","operation":"CloseHandle","handle":3441068,"result":0}
+{"at":"2026-10-23T20:12:24.710Z","operation":"CloseHandle","handle":3408301,"result":0}
+{"at":"2026-10-23T20:12:24.713Z","operation":"CloseHandle","handle":3375534,"result":0}
+{"at":"2026-10-23T20:12:24.716Z","operation":"CloseHandle","handle":3342767,"result":0}
+{"at":"2026-10-23T20:12:24.719Z","operation":"CloseHandle","handle":3310000,"result":0}
+{"at":"2026-10-23T20:12:24.722Z","operation":"CloseHandle","handle":3277233,"result":0}
+{"at":"2026-10-23T20:12:24.725Z","operation":"CloseHandle","handle":3244466,"result":0}
+{"at":"2026-10-23T20:12:24.729Z","operation":"CloseHandle","handle":3211699,"result":0}
+{"at":"2026-10-23T20:12:24.732Z","operation":"CloseHandle","handle":3178932,"result":0}
+{"at":"2026-10-23T20:12:24.736Z","operation":"CloseHandle","handle":3146165,"result":0}
+{"at":"2026-10-23T20:12:24.739Z","operation":"CloseHandle","handle":3113398,"result":0}
+{"at":"2026-10-23T20:12:24.742Z","operation":"CloseHandle","handle":3080631,"result":0}
+{"at":"2026-10-23T20:12:24.746Z","operation":"CloseHandle","handle":3047864,"result":0}
+{"at":"2026-10-23T20:12:24.749Z","operation":"CloseHandle","handle":3015097,"result":0}
+{"at":"2026-10-23T20:12:24.752Z","operation":"CloseHandle","handle":2982330,"result":0}
+{"at":"2026-10-23T20:12:24.755Z","operation":"CloseHandle","handle":2949563,"result":0}
+{"at":"2026-10-23T20:12:24.759Z","operation":"CloseHandle","handle":2916801,"result":0}
+{"at":"2026-10-23T20:12:24.763Z","operation":"Free","base":153433649152}

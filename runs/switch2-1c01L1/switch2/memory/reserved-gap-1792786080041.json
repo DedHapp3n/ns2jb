@@ -1,0 +1,84 @@
+{
+  "session": "switch2-1c01L1",
+  "scratch": "/NS2_GAP_1792786080122",
+  "canary": "/NS2_GAP_1792786080122/canary/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/AAAAAAAAAAAAAAAAAAAAAAAA",
+  "extent": 9280,
+  "markerOffset": 9024,
+  "probeReadSize": 1572864,
+  "trialRange": 6291456,
+  "cacheReadSize": 2097152,
+  "fragmentCount": 16,
+  "minimumCacheHeld": 10256,
+  "metadataAttempts": 2,
+  "fieldCopies": 2,
+  "plannerCycle": 163840,
+  "started": "2026-10-23T20:08:00.122Z",
+  "cases": [],
+  "control": {
+    "id": "reserved-gap-1792786080041",
+    "pid": 5376,
+    "mode": "closed",
+    "active": false,
+    "checkpoint": "abort-control",
+    "directory": "C:\\Users\\HATEWI~1\\AppData\\Local\\Temp\\ns2-WNljrW"
+  },
+  "originalRom": {
+    "mount": 36511518720,
+    "storage": 36511498240,
+    "serviceAddress": 36511494144,
+    "manager": 471959117232,
+    "borrowed": 688620,
+    "objectId": 149
+  },
+  "abortControlResult": 3074562,
+  "storageSize": "144827272",
+  "workerDelaysNs": [
+    0,
+    300000,
+    350000,
+    450000,
+    550000,
+    650000,
+    1700000,
+    2000000,
+    2150000,
+    2800000
+  ],
+  "error": "Error: EPERM: operation not permitted, rename 'C:\\VS\\repros\\ns2jb\\runs\\switch2-1c01L1\\switch2\\memory\\reserved-gap-1792786080041.json.5376.tmp' -> 'C:\\VS\\repros\\ns2jb\\runs\\switch2-1c01L1\\switch2\\memory\\reserved-gap-1792786080041.json'\n    at async Object.rename (node:internal/fs/promises:1491:10)\n    at async C:\\VS\\repros\\ns2jb\\runs\\switch2-1c01L1\\switch2\\memory\\run-control.cjs:59:7\n    at async RunControl.begin (C:\\VS\\repros\\ns2jb\\runs\\switch2-1c01L1\\switch2\\memory\\run-control.cjs:38:5)\n    at async wave (C:\\VS\\repros\\ns2jb\\runs\\switch2-1c01L1\\switch2\\memory\\probe-reserved-gap.cjs:325:7)\n    at async main (C:\\VS\\repros\\ns2jb\\runs\\switch2-1c01L1\\switch2\\memory\\probe-reserved-gap.cjs:519:26)",
+  "cleanedUp": true,
+  "finished": "2026-10-23T20:08:02.249Z",
+  "metrics": {
+    "requests": 298,
+    "elapsedMs": 1357.848799999999,
+    "methods": {
+      "query": 31,
+      "read": 121,
+      "verifyFunction": 1,
+      "call3": 119,
+      "write": 26
+    }
+  },
+  "retained": {
+    "base": 0,
+    "bytes": 37748736,
+    "handles": [],
+    "threads": [],
+    "saved": 2916801,
+    "temporary": 2949563,
+    "root": 2982330,
+    "originalRom": 3015097,
+    "cacheNeedsRestore": false,
+    "created": [],
+    "storages": [
+      3473835
+    ],
+    "gates": [
+      36867661824,
+      36867661840,
+      36867661856,
+      36867661872
+    ],
+    "workers": [],
+    "released": false
+  }
+}

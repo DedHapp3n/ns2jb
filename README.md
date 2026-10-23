@@ -5,8 +5,9 @@ Thank you Codex for dutifully packaging the exploits for distribution. No, I hav
 Runs two small native functions inside FS, checks their results, and restores the
 original instructions. Switch 2 only; no npm install or compiler needed.
 
-You need **SmileBASIC 4.4.9**, **system software 23.0.1**, **Node.js 22+** on
-macOS or Linux, and over **20 MiB free** in the SmileBASIC save. The computer and
+You need **SmileBASIC 4.4.9**, **system software 23.0.1**, **Node.js 22+**, and
+over **20 MiB free** in the SmileBASIC save. Upstream was documented for macOS
+and Linux. This fork also contains a Windows host-port layer. The computer and
 console must be on the same reachable network.
 
 ## One-time setup
@@ -58,3 +59,54 @@ launch sequence; `engine/switch2/process/fs-execute.cjs` contains the FS demo.
 The native helper and its source are in `engine/switch2/ro/payload/`.
 Developers can reproduce it with Zig 0.15.2:
 `node engine/build-payload.cjs --check --zig /path/to/zig`.
+
+## Windows host-port status
+
+This fork replaces the POSIX-only local control endpoint with a small
+cross-platform Node.js IPC layer:
+
+- Unix hosts keep a private Unix-domain socket under the system temp directory.
+- Windows hosts use a per-run random `\\\\.\\pipe\\ns2jb-...` named pipe.
+- No extra LAN-facing port is opened for this internal control channel.
+- The Switch-facing TCP protocol, native payload, exploit constants and target
+  behavior are unchanged by the host-port patch.
+
+**Windows hardware status:** verified end-to-end on owned Switch 2 hardware on
+2026-10-23 with system software **23.0.1**, SmileBASIC **4.4.9**, and
+Node.js **24.x** on Windows. The Windows-hosted run reached the same successful
+ns2jb result as the previous host path. The same known post-run crash was also
+observed, so this is a Windows-host compatibility verification, not a claim of
+a clean post-run shutdown.
+
+On Windows, Node maps child-process termination signals to abrupt process
+termination rather than POSIX signal delivery. A failed/aborted run must
+therefore still be treated as requiring the documented fresh console restart.
+
+For the Switch-facing connection, Windows Defender Firewall may ask whether
+Node.js may accept inbound connections. Allow it on the **Private** network
+profile used by the console, or create an inbound TCP rule for port **39380**
+limited to that private/LAN profile. Do not expose the port on Public profiles
+or through an Internet-facing router rule.
+
+Before touching the Switch, run the host preflight through the same entrypoint
+used for a real launch:
+
+```powershell
+node run.cjs --preflight
+```
+
+If several IPv4 addresses are present (for example WSL/Hyper-V/VPN adapters),
+the checker asks which address is on the same LAN as the Switch. You can also
+supply it directly:
+
+```powershell
+node run.cjs --preflight 192.168.1.10
+```
+
+The standalone `node host-check.cjs [computer-IP]` form remains available for
+automation and debugging. A normal `node run.cjs` launch now also rejects
+Node.js versions older than 22 before creating a run or waiting for the console.
+
+The preflight only checks Node.js, temporary-file access, local IPC and whether
+TCP port 39380 can bind on that address. It does not run the exploit or contact
+the console.

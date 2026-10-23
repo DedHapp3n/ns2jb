@@ -86,15 +86,29 @@ async function runEngine(directory) {
 
 async function main(args = process.argv.slice(2)) {
   if (args.length === 1 && args[0] === '--help') {
-    console.log('Usage: node run.cjs [computer-IP]\nSwitch 2 only. No npm install required. See README.md for the BASIC setup.');
+    console.log('Usage: node run.cjs [computer-IP]\n       node run.cjs --preflight [computer-IP]\nSwitch 2 only. No npm install required. See README.md for the BASIC setup.');
     return;
   }
+  const hostTools = require('./host-check.cjs');
+  if (args[0] === '--preflight') return hostTools.main(args.slice(1));
+  hostTools.requireNode22();
   const host = await chooseHost(args), token = pairingCode(), command = connectCommand(host, token);
   const workspace = path.join(__dirname, 'runs');
   await fs.mkdir(workspace, {recursive: true, mode: 0o700});
   const directory = await fs.mkdtemp(path.join(workspace, 'switch2-'));
   await fs.writeFile(path.join(directory, 'connect.txt'), command + '\n', {mode: 0o600});
-  const result = {platform: 2, sourceSha256: await sourceDigest(), started: new Date().toISOString(), verified: false};
+  const result = {
+    platform: 2,
+    sourceSha256: await sourceDigest(),
+    started: new Date().toISOString(),
+    verified: false,
+    host: {
+      platform: process.platform,
+      arch: process.arch,
+      node: process.version,
+      address: host,
+    },
+  };
   let native, bridge, failure;
   try {
     const connected = await listen({host, port, token, onWaiting() {

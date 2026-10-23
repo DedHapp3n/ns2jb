@@ -158,6 +158,51 @@ test('one host address and one BASIC command select the fixed Switch 2 path', as
   ]}), ['10.1.0.2']);
 });
 
+test('local IPC paths are portable between Unix sockets and Windows named pipes', () => {
+  const {localIpcPath} = require('./engine/shared/local-ipc.cjs');
+  const nonce = '00112233445566778899aabbccddeeff';
+  assert.equal(localIpcPath('/tmp/ns2-test', 'memory', {platform: 'linux', nonce}),
+    path.join('/tmp/ns2-test', 'memory.sock'));
+  assert.equal(localIpcPath('C:\\Temp\\ns2-test', 'memory', {platform: 'win32', nonce}),
+    '\\\\.\\pipe\\ns2jb-memory-' + nonce);
+  assert.throws(() => localIpcPath('C:\\Temp', '../bad', {platform: 'win32', nonce}), /Invalid IPC endpoint name/);
+  assert.throws(() => localIpcPath('C:\\Temp', 'memory', {platform: 'win32', nonce: 'short'}), /Invalid IPC endpoint nonce/);
+});
+
+test('local IPC endpoint round-trips bytes on the current host', async () => {
+  const {createPrivateTempDirectory, localIpcPath, secureLocalIpcPath, removeLocalIpcPath} =
+    require('./engine/shared/local-ipc.cjs');
+  const directory = await createPrivateTempDirectory('ns2-ipc-test-');
+  const endpoint = localIpcPath(directory, 'roundtrip');
+  const server = net.createServer(socket => socket.end('ok'));
+  try {
+    await new Promise((resolve, reject) => {
+      server.once('error', reject);
+      server.listen(endpoint, resolve);
+    });
+    await secureLocalIpcPath(endpoint);
+    const client = net.createConnection(endpoint);
+    client.setEncoding('utf8');
+    let data = '';
+    client.on('data', chunk => {data += chunk;});
+    await once(client, 'end');
+    assert.equal(data, 'ok');
+    await new Promise(resolve => server.close(resolve));
+  } finally {
+    if (server.listening) await new Promise(resolve => server.close(resolve));
+    await removeLocalIpcPath(endpoint);
+    fs.rmSync(directory, {recursive: true, force: true});
+  }
+});
+
+test('run-control temp directories live under the host temp directory', async t => {
+  const {createPrivateTempDirectory} = require('./engine/shared/local-ipc.cjs');
+  const directory = await createPrivateTempDirectory('ns2-host-test-');
+  t.after(() => fs.rmSync(directory, {recursive: true, force: true}));
+  assert.equal(path.dirname(directory), path.resolve(os.tmpdir()));
+  assert.ok(path.basename(directory).startsWith('ns2-host-test-'));
+});
+
 test('a stop prevents the next operation but still permits restoration', async t => {
   const {RunControl, StopRequested} = require('./engine/switch2/memory/run-control.cjs');
   const snapshots = [], control = new RunControl({id: 'host-test', save: async () => snapshots.push({...control.state})});
@@ -179,7 +224,7 @@ test('a stop prevents the next operation but still permits restoration', async t
 });
 
 test('the engine has only local or Node dependencies, all present in the package', () => {
-  const root = __dirname, files = ['run.cjs'];
+  const root = __dirname, files = ['run.cjs', 'host-check.cjs'];
   function walk(folder) {
     for (const item of fs.readdirSync(path.join(root, folder), {withFileTypes: true})) {
       const name = folder + '/' + item.name;
@@ -196,7 +241,8 @@ test('the engine has only local or Node dependencies, all present in the package
       if (!dependency.startsWith('.')) {
         assert.ok(dependency.startsWith('node:'), name + ': external dependency ' + dependency);
       } else {
-        const relative = path.relative(root, path.resolve(root, path.dirname(name), dependency));
+        const relative = path.relative(root, path.resolve(root, path.dirname(name), dependency))
+          .split(path.sep).join('/');
         assert.ok(present.has(relative) || generated.has(relative), name + ': missing ' + relative);
       }
     }

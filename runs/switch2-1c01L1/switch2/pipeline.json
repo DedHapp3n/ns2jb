@@ -1,0 +1,77 @@
+{
+  "session": "switch2-1c01L1",
+  "started": "2026-10-23T20:07:57.173Z",
+  "stages": [
+    {
+      "name": "app/map",
+      "started": "2026-10-23T20:07:57.176Z",
+      "status": "complete",
+      "result": null,
+      "finished": "2026-10-23T20:07:59.140Z"
+    },
+    {
+      "name": "app/inspect-mounts",
+      "started": "2026-10-23T20:07:59.142Z",
+      "status": "complete",
+      "result": null,
+      "finished": "2026-10-23T20:07:59.300Z"
+    },
+    {
+      "name": "Remove recorded scratch from prior launches",
+      "started": "2026-10-23T20:07:59.301Z",
+      "status": "complete",
+      "result": {
+        "started": "2026-10-23T20:07:59.304Z",
+        "previous": [],
+        "removed": [],
+        "cleanedUp": true
+      },
+      "finished": "2026-10-23T20:07:59.304Z"
+    },
+    {
+      "name": "app/qualify",
+      "started": "2026-10-23T20:07:59.304Z",
+      "status": "complete",
+      "result": {
+        "session": "switch2-1c01L1",
+        "started": "2026-10-23T20:07:59.353Z",
+        "verified": true,
+        "frequency": 31250000,
+        "transferSha256": "5fd5f22099a2f6a4d9dd4b7794e8fdb38d99862f347df17460fd01653fd2ddb1",
+        "worker": {
+          "thread": 36521553920,
+          "core": 0,
+          "joined": true
+        },
+        "cleanedUp": true,
+        "completed": "2026-10-23T20:07:59.946Z",
+        "file": "C:\\VS\\repros\\ns2jb\\runs\\switch2-1c01L1\\switch2\\app\\qualification.json",
+        "summary": {
+          "file": "C:\\VS\\repros\\ns2jb\\runs\\switch2-1c01L1\\switch2\\app\\qualification.json",
+          "session": "switch2-1c01L1",
+          "started": "2026-10-23T20:07:59.353Z",
+          "verified": true,
+          "frequency": 31250000,
+          "transferSha256": "5fd5f22099a2f6a4d9dd4b7794e8fdb38d99862f347df17460fd01653fd2ddb1",
+          "worker": {
+            "thread": 36521553920,
+            "core": 0,
+            "joined": true
+          },
+          "cleanedUp": true,
+          "completed": "2026-10-23T20:07:59.946Z"
+        }
+      },
+      "finished": "2026-10-23T20:07:59.954Z"
+    },
+    {
+      "name": "FS read, write and restoration",
+      "started": "2026-10-23T20:07:59.954Z",
+      "status": "failed",
+      "error": "Error: FS acquisition did not complete. Inspect C:\\VS\\repros\\ns2jb\\runs\\switch2-1c01L1\\switch2\\acquisition.log; restart the console before another launch.\n    at Object.start (C:\\VS\\repros\\ns2jb\\runs\\switch2-1c01L1\\switch2\\acquire.cjs:49:15)\n    at async C:\\VS\\repros\\ns2jb\\runs\\switch2-1c01L1\\switch2\\pipeline.cjs:36:21\n    at async stage (C:\\VS\\repros\\ns2jb\\runs\\switch2-1c01L1\\switch2\\pipeline.cjs:19:20)\n    at async main (C:\\VS\\repros\\ns2jb\\runs\\switch2-1c01L1\\switch2\\pipeline.cjs:35:5)",
+      "finished": "2026-10-23T20:08:02.493Z"
+    }
+  ],
+  "error": "Error: FS acquisition did not complete. Inspect C:\\VS\\repros\\ns2jb\\runs\\switch2-1c01L1\\switch2\\acquisition.log; restart the console before another launch.\n    at Object.start (C:\\VS\\repros\\ns2jb\\runs\\switch2-1c01L1\\switch2\\acquire.cjs:49:15)\n    at async C:\\VS\\repros\\ns2jb\\runs\\switch2-1c01L1\\switch2\\pipeline.cjs:36:21\n    at async stage (C:\\VS\\repros\\ns2jb\\runs\\switch2-1c01L1\\switch2\\pipeline.cjs:19:20)\n    at async main (C:\\VS\\repros\\ns2jb\\runs\\switch2-1c01L1\\switch2\\pipeline.cjs:35:5)",
+  "finished": "2026-10-23T20:08:02.494Z"
+}

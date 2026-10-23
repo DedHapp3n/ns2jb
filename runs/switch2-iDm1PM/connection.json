@@ -1,0 +1,18 @@
+{
+  "port": 58615,
+  "token": "69272572ee5661db6965c7b09dfa2e203aa2e1bda2f400d4366a80a58eb8ce8f",
+  "addresses": {
+    "scratch": 155394253696,
+    "scratchBytes": 524288,
+    "main": 231815008256,
+    "sdk": 232177979392,
+    "got": 231825269488,
+    "memmove": 232183775984,
+    "backing": 155258455264,
+    "controller": 155258455376,
+    "platform": 2,
+    "sdkCrc32": 3925528160,
+    "session": "switch2-iDm1PM",
+    "target": "switch2"
+  }
+}

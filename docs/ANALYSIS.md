@@ -141,3 +141,33 @@ host-side unit checks without hardware.
   package is the SmileBASIC → FS → RO chain only.
 - Nothing here targets anything but this console/firmware/game combination;
   see `AGENTS.md` for this repo's rules.
+
+## Host portability boundary
+
+The Switch connection itself is not POSIX-specific. `run.cjs` uses
+`node:net` TCP on port 39380 and Node's normal network-interface enumeration.
+
+The concrete Windows blocker in the captured host is the private control
+channel used by the retained FS-memory endpoint:
+
+- `memory/run-control.cjs` hard-coded `/tmp/ns2-`;
+- `memory/fs-memory-control.cjs` created `memory.sock`, listened on that
+  filesystem path, and applied POSIX `chmod(0600)`;
+- `tools/endpoint.cjs` reconnects to the resulting endpoint through
+  `net.createConnection(path)`.
+
+The Windows-port layer keeps that interface shape intact. The server/client
+code still passes a single IPC path string, but `shared/local-ipc.cjs`
+selects a Unix-domain socket on Unix and a Windows named-pipe path on Windows.
+This avoids changing the exploit protocol or the internal request format.
+
+Security boundary: the Windows named pipe is local IPC and receives a
+cryptographically random per-run name. It is not exposed on the LAN. This is
+not a claim of a new authentication protocol; callers still depend on the
+local host account/security boundary just as the Unix implementation depended
+on filesystem permissions.
+
+Remaining Windows-specific caution: Node's child-process `SIGTERM`/
+`SIGKILL` handling on Windows is abrupt, not POSIX signal delivery. The
+normal success path does not depend on changing exploit behavior, but abort
+and timeout cleanup must be treated conservatively until hardware-tested.

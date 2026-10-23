@@ -52,3 +52,34 @@ system software 23.0.1, SmileBASIC 4.4.9, on 2026-10-21 (third fresh boot; the
 first two attempts stopped at validation checks and cleaned up). We have **not**
 re-run anything on hardware; every local check here is host-side: the
 reproducible-build check, and unit-level checks under `test.cjs`.
+
+## 2026-10-23 — Windows host portability rework
+
+This fork now intentionally diverges from the captured upstream host engine in
+a narrow portability layer. The following host-side files are changed or added:
+
+- `engine/shared/local-ipc.cjs` — cross-platform temporary-directory and local
+  IPC endpoint helpers;
+- `engine/switch2/memory/run-control.cjs` — uses the host OS temp directory
+  instead of hard-coded `/tmp`;
+- `engine/switch2/memory/fs-memory-control.cjs` — uses Unix-domain sockets on
+  Unix and per-run random Windows named pipes on Windows;
+- `test.cjs` — covers both IPC path formats and portable temp directories.
+
+The Switch-facing TCP protocol, native helper source/binary, payload manifest,
+exploit constants and execution sequence were not changed by this port.
+
+**Verification status:** VERIFIED ON OWNED HARDWARE on 2026-10-23.
+
+The Windows host-port completed the published ns2jb path end-to-end against an
+owned Switch 2 using system software **23.0.1**, SmileBASIC **4.4.9**, and
+Node.js **24.x** on the Windows host. The observed behavior matched the previous
+host path, including the known crash after the successful run. This verifies
+the Windows host portability layer in a real console run; it does not turn the
+post-run crash into a clean-shutdown result.
+
+The tested branch was `windows-host-port`. The branch head at the time the
+result was reported was `998c9660fc8e167af047af3d473a537af12373c8`; the
+exact local checkout hash was not separately captured during the hardware run.
+`engine/switch2/ro/payload/` was not modified, so the native payload
+reproducibility anchor remains unchanged.
