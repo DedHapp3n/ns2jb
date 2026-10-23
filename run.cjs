@@ -94,7 +94,18 @@ async function main(args = process.argv.slice(2)) {
   await fs.mkdir(workspace, {recursive: true, mode: 0o700});
   const directory = await fs.mkdtemp(path.join(workspace, 'switch2-'));
   await fs.writeFile(path.join(directory, 'connect.txt'), command + '\n', {mode: 0o600});
-  const result = {platform: 2, sourceSha256: await sourceDigest(), started: new Date().toISOString(), verified: false};
+  const result = {
+    platform: 2,
+    sourceSha256: await sourceDigest(),
+    started: new Date().toISOString(),
+    verified: false,
+    host: {
+      platform: process.platform,
+      arch: process.arch,
+      node: process.version,
+      address: host,
+    },
+  };
   let native, bridge, failure;
   try {
     const connected = await listen({host, port, token, onWaiting() {
