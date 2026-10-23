@@ -85,3 +85,21 @@ Node.js may accept inbound connections. Allow it on the **Private** network
 profile used by the console, or create an inbound TCP rule for port **39380**
 limited to that private/LAN profile. Do not expose the port on Public profiles
 or through an Internet-facing router rule.
+
+Before touching the Switch, run the host preflight:
+
+```powershell
+node host-check.cjs
+```
+
+If several IPv4 addresses are present (for example WSL/Hyper-V/VPN adapters),
+the checker asks which address is on the same LAN as the Switch. You can also
+supply it directly:
+
+```powershell
+node host-check.cjs 192.168.1.10
+```
+
+The preflight only checks Node.js, temporary-file access, local IPC and whether
+TCP port 39380 can bind on that address. It does not run the exploit or contact
+the console.
