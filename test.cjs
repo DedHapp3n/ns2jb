@@ -169,6 +169,32 @@ test('local IPC paths are portable between Unix sockets and Windows named pipes'
   assert.throws(() => localIpcPath('C:\\Temp', 'memory', {platform: 'win32', nonce: 'short'}), /Invalid IPC endpoint nonce/);
 });
 
+test('local IPC endpoint round-trips bytes on the current host', async () => {
+  const {createPrivateTempDirectory, localIpcPath, secureLocalIpcPath, removeLocalIpcPath} =
+    require('./engine/shared/local-ipc.cjs');
+  const directory = await createPrivateTempDirectory('ns2-ipc-test-');
+  const endpoint = localIpcPath(directory, 'roundtrip');
+  const server = net.createServer(socket => socket.end('ok'));
+  try {
+    await new Promise((resolve, reject) => {
+      server.once('error', reject);
+      server.listen(endpoint, resolve);
+    });
+    await secureLocalIpcPath(endpoint);
+    const client = net.createConnection(endpoint);
+    client.setEncoding('utf8');
+    let data = '';
+    client.on('data', chunk => {data += chunk;});
+    await once(client, 'end');
+    assert.equal(data, 'ok');
+    await new Promise(resolve => server.close(resolve));
+  } finally {
+    if (server.listening) await new Promise(resolve => server.close(resolve));
+    await removeLocalIpcPath(endpoint);
+    fs.rmSync(directory, {recursive: true, force: true});
+  }
+});
+
 test('run-control temp directories live under the host temp directory', async t => {
   const {createPrivateTempDirectory} = require('./engine/shared/local-ipc.cjs');
   const directory = await createPrivateTempDirectory('ns2-host-test-');
