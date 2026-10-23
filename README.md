@@ -86,10 +86,11 @@ profile used by the console, or create an inbound TCP rule for port **39380**
 limited to that private/LAN profile. Do not expose the port on Public profiles
 or through an Internet-facing router rule.
 
-Before touching the Switch, run the host preflight:
+Before touching the Switch, run the host preflight through the same entrypoint
+used for a real launch:
 
 ```powershell
-node host-check.cjs
+node run.cjs --preflight
 ```
 
 If several IPv4 addresses are present (for example WSL/Hyper-V/VPN adapters),
@@ -97,8 +98,12 @@ the checker asks which address is on the same LAN as the Switch. You can also
 supply it directly:
 
 ```powershell
-node host-check.cjs 192.168.1.10
+node run.cjs --preflight 192.168.1.10
 ```
+
+The standalone `node host-check.cjs [computer-IP]` form remains available for
+automation and debugging. A normal `node run.cjs` launch now also rejects
+Node.js versions older than 22 before creating a run or waiting for the console.
 
 The preflight only checks Node.js, temporary-file access, local IPC and whether
 TCP port 39380 can bind on that address. It does not run the exploit or contact
