@@ -224,7 +224,7 @@ test('a stop prevents the next operation but still permits restoration', async t
 });
 
 test('the engine has only local or Node dependencies, all present in the package', () => {
-  const root = __dirname, files = ['run.cjs'];
+  const root = __dirname, files = ['run.cjs', 'host-check.cjs'];
   function walk(folder) {
     for (const item of fs.readdirSync(path.join(root, folder), {withFileTypes: true})) {
       const name = folder + '/' + item.name;
