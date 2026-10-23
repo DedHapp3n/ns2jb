@@ -79,3 +79,9 @@ result, not evidence for the Windows port.
 On Windows, Node maps child-process termination signals to abrupt process
 termination rather than POSIX signal delivery. A failed/aborted run must
 therefore still be treated as requiring the documented fresh console restart.
+
+For the Switch-facing connection, Windows Defender Firewall may ask whether
+Node.js may accept inbound connections. Allow it on the **Private** network
+profile used by the console, or create an inbound TCP rule for port **39380**
+limited to that private/LAN profile. Do not expose the port on Public profiles
+or through an Internet-facing router rule.
