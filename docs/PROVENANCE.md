@@ -69,7 +69,17 @@ a narrow portability layer. The following host-side files are changed or added:
 The Switch-facing TCP protocol, native helper source/binary, payload manifest,
 exploit constants and execution sequence were not changed by this port.
 
-**Verification status:** host portability change only; not yet reproduced on
-Switch 2 hardware from Windows. No claim in the upstream hardware section is
-upgraded by this change. `engine/switch2/ro/payload/` was not modified, so the
-native payload reproducibility anchor is unchanged.
+**Verification status:** VERIFIED ON OWNED HARDWARE on 2026-10-23.
+
+The Windows host-port completed the published ns2jb path end-to-end against an
+owned Switch 2 using system software **23.0.1**, SmileBASIC **4.4.9**, and
+Node.js **24.x** on the Windows host. The observed behavior matched the previous
+host path, including the known crash after the successful run. This verifies
+the Windows host portability layer in a real console run; it does not turn the
+post-run crash into a clean-shutdown result.
+
+The tested branch was `windows-host-port`. The branch head at the time the
+result was reported was `998c9660fc8e167af047af3d473a537af12373c8`; the
+exact local checkout hash was not separately captured during the hardware run.
+`engine/switch2/ro/payload/` was not modified, so the native payload
+reproducibility anchor remains unchanged.
