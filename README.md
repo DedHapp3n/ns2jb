@@ -71,10 +71,12 @@ cross-platform Node.js IPC layer:
 - The Switch-facing TCP protocol, native payload, exploit constants and target
   behavior are unchanged by the host-port patch.
 
-**Verification boundary:** the Windows changes are host-side portability work.
-They have not yet been verified end-to-end on Switch 2 hardware from Windows.
-The upstream October 21 hardware result remains an upstream Linux/macOS-era
-result, not evidence for the Windows port.
+**Windows hardware status:** verified end-to-end on owned Switch 2 hardware on
+2026-10-23 with system software **23.0.1**, SmileBASIC **4.4.9**, and
+Node.js **24.x** on Windows. The Windows-hosted run reached the same successful
+ns2jb result as the previous host path. The same known post-run crash was also
+observed, so this is a Windows-host compatibility verification, not a claim of
+a clean post-run shutdown.
 
 On Windows, Node maps child-process termination signals to abrupt process
 termination rather than POSIX signal delivery. A failed/aborted run must
