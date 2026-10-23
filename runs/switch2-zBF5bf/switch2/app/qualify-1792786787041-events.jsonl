@@ -1,0 +1,10 @@
+{"at":"2026-10-23T20:19:47.138Z","operation":"initialize","session":"switch2-zBF5bf","base":476769771520,"bytes":524288}
+{"at":"2026-10-23T20:19:47.229Z","operation":"workerCodeVerified"}
+{"at":"2026-10-23T20:19:47.343Z","operation":"counterFrequency","nativeModule":26617909248,"address":26619209456,"frequency":31250000,"legacyFrequency":19200000,"instructionBytes":"00ca9a52803ba072c0035fd6"}
+{"at":"2026-10-23T20:19:47.424Z","operation":"availableCoreMasks","processMask":"63","sdkMask":"7"}
+{"at":"2026-10-23T20:19:47.505Z","operation":"workerPrepared","label":"qualify-1792786787041","base":476769902592,"slot":476769779712,"bytes":94208,"logicalCalls":4,"nativeCalls":5,"resultOffsets":[2048,2056,2064,2072,2080],"logicalResultIndices":[0,1,2,4],"resultOffset":2080,"stackOffset":73728,"tablesOffset":4096,"frameSha256":"10901c91e16c8156755447041b588346f4ae6602310129bfa37b675f620fe047"}
+{"at":"2026-10-23T20:19:47.524Z","operation":"workerStarted","label":"qualify-1792786787041","thread":476770381824,"base":476769902592}
+{"at":"2026-10-23T20:19:47.550Z","operation":"workerAffinitySet","label":"qualify-1792786787041","thread":476770381824,"before":"1","requested":"1","result":0}
+{"at":"2026-10-23T20:19:47.563Z","operation":"workerAffinity","label":"qualify-1792786787041","thread":476770381824,"before":"1","after":"1"}
+{"at":"2026-10-23T20:19:47.590Z","operation":"workerJoined","label":"qualify-1792786787041","thread":476770381824,"values":["0","476770381824","0","476770230272"],"nativeCalls":5}
+{"at":"2026-10-23T20:19:47.603Z","operation":"Free","base":476769771520}

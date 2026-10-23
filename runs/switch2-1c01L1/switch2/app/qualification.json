@@ -1,0 +1,14 @@
+{
+  "session": "switch2-1c01L1",
+  "started": "2026-10-23T20:07:59.353Z",
+  "verified": true,
+  "frequency": 31250000,
+  "transferSha256": "5fd5f22099a2f6a4d9dd4b7794e8fdb38d99862f347df17460fd01653fd2ddb1",
+  "worker": {
+    "thread": 36521553920,
+    "core": 0,
+    "joined": true
+  },
+  "cleanedUp": true,
+  "completed": "2026-10-23T20:07:59.946Z"
+}

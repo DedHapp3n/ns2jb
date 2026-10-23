@@ -1,0 +1,1861 @@
+{
+  "session": "switch2-iDm1PM",
+  "scratch": "/NS2_GAP_1792786340237",
+  "canary": "/NS2_GAP_1792786340237/canary/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/AAAAAAAAAAAAAAAAAAAAAAAA",
+  "extent": 9280,
+  "markerOffset": 9024,
+  "probeReadSize": 1572864,
+  "trialRange": 6291456,
+  "cacheReadSize": 2097152,
+  "fragmentCount": 16,
+  "minimumCacheHeld": 10256,
+  "metadataAttempts": 2,
+  "fieldCopies": 2,
+  "plannerCycle": 163840,
+  "started": "2026-10-23T20:12:20.237Z",
+  "cases": [
+    {
+      "profile": "abort-control",
+      "readSize": 1572864,
+      "extent": 9280,
+      "rows": [
+        {
+          "role": "commit",
+          "result": 0,
+          "inline": "00000000000000000000000000000000",
+          "startUs": 0,
+          "endUs": 20845.824
+        },
+        {
+          "role": "hole",
+          "result": 0,
+          "inline": "00000000000000000000000009000000",
+          "startUs": 314.848,
+          "endUs": 19702.336
+        },
+        {
+          "role": "tail0",
+          "result": 3276802,
+          "inline": "00000000000000000000000000000000",
+          "startUs": 340.672,
+          "endUs": 20970.688
+        },
+        {
+          "role": "tail1",
+          "result": 3276802,
+          "inline": "00000000000000000000000000000000",
+          "startUs": 444.064,
+          "endUs": 21033.824
+        },
+        {
+          "role": "tail2",
+          "result": 3276802,
+          "inline": "00000000000000000000000000000000",
+          "startUs": 567.488,
+          "endUs": 21086.208
+        },
+        {
+          "role": "tail3",
+          "result": 3276802,
+          "inline": "00000000000000000000000000000000",
+          "startUs": 643.84,
+          "endUs": 21136.608
+        },
+        {
+          "role": "canary",
+          "result": 0,
+          "inline": "01000000000000000000000000000000",
+          "startUs": 1696.224,
+          "endUs": 20711.584
+        },
+        {
+          "role": "filler0",
+          "result": 514,
+          "inline": "00000000000000000500000009000000",
+          "startUs": 2019.328,
+          "endUs": 20793.76
+        },
+        {
+          "role": "filler1",
+          "result": 514,
+          "inline": "00000000000000000500000009000000",
+          "startUs": 2145.888,
+          "endUs": 20739.488
+        },
+        {
+          "role": "pin",
+          "result": 0,
+          "inline": "00000000000000000000000000000000",
+          "startUs": 2797.44,
+          "endUs": 18681.44
+        },
+        {
+          "role": "clearReport",
+          "result": 0,
+          "inline": "00702a01000000000000000000000000",
+          "startUs": 18681.44,
+          "endUs": 18761.92
+        },
+        {
+          "role": "preRelease",
+          "result": 0,
+          "inline": "00b04e01000000000000000000000000",
+          "memory": [
+            21934080,
+            0,
+            0,
+            1949696,
+            0,
+            3340384,
+            4772032,
+            0,
+            0,
+            32391168,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "startUs": 18762.176,
+          "endUs": 18985.568
+        },
+        {
+          "role": "release",
+          "result": 0,
+          "inline": "0400000008000000000000000000000002000000d00000000000000000000000",
+          "startUs": 18985.632,
+          "endUs": 19178.304
+        },
+        {
+          "role": "guard0",
+          "result": 514,
+          "inline": "00000000000000000500000009000000",
+          "startUs": 19184.608,
+          "endUs": 20815.136
+        },
+        {
+          "role": "guard1",
+          "result": 514,
+          "inline": "00000000000000000500000009000000",
+          "startUs": 19340.16,
+          "endUs": 20834.688
+        },
+        {
+          "role": "trigger",
+          "result": 3074562,
+          "inline": "00000000000000000000000000000000",
+          "startUs": 19744.544,
+          "endUs": 19773.888
+        }
+      ],
+      "nativeGuard": {
+        "completed": 1,
+        "earlyHole": 0,
+        "minimumSpacing": 1
+      },
+      "triggerAborted": true,
+      "receiveOrderMarginUs": 362.1759999999995,
+      "preReleaseUsed": 25088,
+      "restored": false,
+      "baseline": 3377744,
+      "after": 3362752,
+      "newPersistentBytes": 14992,
+      "allPending": true,
+      "selectedMarker": false,
+      "changedPaths": [],
+      "canaryResult": 0,
+      "canaryType": 1
+    }
+  ],
+  "control": {
+    "id": "reserved-gap-1792786340157",
+    "pid": 1280,
+    "mode": "closed",
+    "active": false,
+    "checkpoint": "abort-control",
+    "directory": "C:\\Users\\HATEWI~1\\AppData\\Local\\Temp\\ns2-0DUzz6"
+  },
+  "originalRom": {
+    "mount": 153077518336,
+    "storage": 153077497856,
+    "serviceAddress": 153077493760,
+    "manager": 232191729072,
+    "borrowed": 688620,
+    "objectId": 146
+  },
+  "abortControlResult": 3074562,
+  "storageSize": "144827272",
+  "workerDelaysNs": [
+    0,
+    300000,
+    350000,
+    450000,
+    550000,
+    650000,
+    1700000,
+    2000000,
+    2150000,
+    2800000
+  ],
+  "reservationChecks": [
+    {
+      "before": 3377744,
+      "held": 3365472,
+      "allocated": 12272
+    }
+  ],
+  "pinHandle": 4030875,
+  "error": "Error: Pinning allocation cost changed\n    at check (C:\\VS\\repros\\ns2jb\\runs\\switch2-iDm1PM\\switch2\\memory\\session.cjs:4:49)\n    at wave (C:\\VS\\repros\\ns2jb\\runs\\switch2-iDm1PM\\switch2\\memory\\probe-reserved-gap.cjs:472:9)\n    at async main (C:\\VS\\repros\\ns2jb\\runs\\switch2-iDm1PM\\switch2\\memory\\probe-reserved-gap.cjs:519:26)",
+  "cleanedUp": true,
+  "finished": "2026-10-23T20:12:24.763Z",
+  "metrics": {
+    "requests": 653,
+    "elapsedMs": 3393.678899999998,
+    "methods": {
+      "query": 32,
+      "read": 260,
+      "verifyFunction": 1,
+      "call3": 233,
+      "write": 84,
+      "batch": 4,
+      "call4": 39
+    }
+  },
+  "retained": {
+    "base": 0,
+    "bytes": 37748736,
+    "handles": [],
+    "threads": [],
+    "saved": 2916801,
+    "temporary": 2949563,
+    "root": 2982330,
+    "fileHandle": null,
+    "group": null,
+    "pinHandle": 4030875,
+    "originalRom": 3015097,
+    "cacheNeedsRestore": false,
+    "created": [],
+    "storages": [
+      3473835
+    ],
+    "gates": [
+      153433661440,
+      153433661456,
+      153433661472,
+      153433661488
+    ],
+    "workers": [
+      {
+        "label": "reserved-gap-1792786340157-0",
+        "base": 153434697728,
+        "slot": 153433657344,
+        "calls": [
+          {
+            "function": 232179178048,
+            "args": [
+              153433661440,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "function": 232179197184,
+            "args": [
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "function": 232179197504,
+            "args": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "name": "start"
+          },
+          {
+            "function": 232179389532,
+            "args": [
+              153433714688,
+              4096,
+              3080631,
+              0
+            ],
+            "name": "commit",
+            "kind": "ipc"
+          },
+          {
+            "function": 232179197504,
+            "args": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "name": "end"
+          },
+          {
+            "function": 232183776672,
+            "args": [
+              153433659912,
+              1,
+              1,
+              0
+            ],
+            "name": "protectedRequestFinished"
+          }
+        ],
+        "bytes": 94208,
+        "logicalCalls": 6,
+        "nativeCalls": 6,
+        "resultOffsets": [
+          2048,
+          2056,
+          2064,
+          2072,
+          2080,
+          2088
+        ],
+        "logicalResultIndices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "resultOffset": 2088,
+        "stackOffset": 73728,
+        "tablesOffset": 4096,
+        "snapshot": 153438892032,
+        "frameSha256": "f3fa9b1e2da07168a007cedf170b13f95e985f0565ad3a5acaf004989d7066d0",
+        "thread": 153087025152,
+        "joined": true,
+        "results": [
+          "0",
+          "0",
+          "3816112703",
+          "0",
+          "3816764135",
+          "153433659912"
+        ]
+      },
+      {
+        "label": "reserved-gap-1792786340157-1",
+        "base": 153434959872,
+        "slot": 153433657360,
+        "calls": [
+          {
+            "function": 232179178048,
+            "args": [
+              153433661440,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "function": 232179197184,
+            "args": [
+              300000,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "function": 232179197504,
+            "args": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "name": "start"
+          },
+          {
+            "function": 232179389532,
+            "args": [
+              153433718784,
+              4096,
+              3047864,
+              0
+            ],
+            "name": "hole",
+            "kind": "ipc"
+          },
+          {
+            "function": 232179197504,
+            "args": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "name": "end"
+          },
+          {
+            "function": 232183776672,
+            "args": [
+              153433659920,
+              1,
+              1,
+              0
+            ],
+            "name": "holeFinished"
+          },
+          {
+            "function": 232179177712,
+            "args": [
+              153433661456,
+              0,
+              0,
+              0
+            ]
+          }
+        ],
+        "bytes": 94208,
+        "logicalCalls": 7,
+        "nativeCalls": 7,
+        "resultOffsets": [
+          2048,
+          2056,
+          2064,
+          2072,
+          2080,
+          2088,
+          2096
+        ],
+        "logicalResultIndices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "resultOffset": 2096,
+        "stackOffset": 73728,
+        "tablesOffset": 4096,
+        "snapshot": 153439154176,
+        "frameSha256": "2bdc60ac62705141912815511561d1e21ca52870bf9175f7f9d41324f32e0dcc",
+        "thread": 153087119360,
+        "joined": true,
+        "results": [
+          "0",
+          "0",
+          "3816122542",
+          "0",
+          "3816728401",
+          "153433659920",
+          "153433661456"
+        ]
+      },
+      {
+        "label": "reserved-gap-1792786340157-2",
+        "base": 153435222016,
+        "slot": 153433657376,
+        "calls": [
+          {
+            "function": 232179178048,
+            "args": [
+              153433661440,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "function": 232179197184,
+            "args": [
+              350000,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "function": 232179197504,
+            "args": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "name": "start"
+          },
+          {
+            "function": 232179389532,
+            "args": [
+              153433722880,
+              4096,
+              3113398,
+              0
+            ],
+            "name": "tail0",
+            "kind": "ipc"
+          },
+          {
+            "function": 232179197504,
+            "args": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "name": "end"
+          },
+          {
+            "function": 232183776672,
+            "args": [
+              153433659912,
+              1,
+              1,
+              0
+            ],
+            "name": "protectedRequestFinished"
+          }
+        ],
+        "bytes": 94208,
+        "logicalCalls": 6,
+        "nativeCalls": 6,
+        "resultOffsets": [
+          2048,
+          2056,
+          2064,
+          2072,
+          2080,
+          2088
+        ],
+        "logicalResultIndices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "resultOffset": 2088,
+        "stackOffset": 73728,
+        "tablesOffset": 4096,
+        "snapshot": 153439416320,
+        "frameSha256": "bb78017884bab54a3120d1642c796bcae7d23830fccd8327d953389647b328b6",
+        "thread": 153087213568,
+        "joined": true,
+        "results": [
+          "0",
+          "0",
+          "3816123349",
+          "0",
+          "3816768037",
+          "153433659912"
+        ]
+      },
+      {
+        "label": "reserved-gap-1792786340157-3",
+        "base": 153435484160,
+        "slot": 153433657392,
+        "calls": [
+          {
+            "function": 232179178048,
+            "args": [
+              153433661440,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "function": 232179197184,
+            "args": [
+              450000,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "function": 232179197504,
+            "args": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "name": "start"
+          },
+          {
+            "function": 232179389532,
+            "args": [
+              153433726976,
+              4096,
+              3146165,
+              0
+            ],
+            "name": "tail1",
+            "kind": "ipc"
+          },
+          {
+            "function": 232179197504,
+            "args": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "name": "end"
+          },
+          {
+            "function": 232183776672,
+            "args": [
+              153433659912,
+              1,
+              1,
+              0
+            ],
+            "name": "protectedRequestFinished"
+          }
+        ],
+        "bytes": 94208,
+        "logicalCalls": 6,
+        "nativeCalls": 6,
+        "resultOffsets": [
+          2048,
+          2056,
+          2064,
+          2072,
+          2080,
+          2088
+        ],
+        "logicalResultIndices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "resultOffset": 2088,
+        "stackOffset": 73728,
+        "tablesOffset": 4096,
+        "snapshot": 153439678464,
+        "frameSha256": "c8dc03196dfa0a5275f517c5fe03b1de3787b0263a8260322b674d3f9886c5bc",
+        "thread": 153087311872,
+        "joined": true,
+        "results": [
+          "0",
+          "0",
+          "3816126580",
+          "0",
+          "3816770010",
+          "153433659912"
+        ]
+      },
+      {
+        "label": "reserved-gap-1792786340157-4",
+        "base": 153435746304,
+        "slot": 153433657408,
+        "calls": [
+          {
+            "function": 232179178048,
+            "args": [
+              153433661440,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "function": 232179197184,
+            "args": [
+              550000,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "function": 232179197504,
+            "args": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "name": "start"
+          },
+          {
+            "function": 232179389532,
+            "args": [
+              153433731072,
+              4096,
+              3178932,
+              0
+            ],
+            "name": "tail2",
+            "kind": "ipc"
+          },
+          {
+            "function": 232179197504,
+            "args": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "name": "end"
+          },
+          {
+            "function": 232183776672,
+            "args": [
+              153433659912,
+              1,
+              1,
+              0
+            ],
+            "name": "protectedRequestFinished"
+          }
+        ],
+        "bytes": 94208,
+        "logicalCalls": 6,
+        "nativeCalls": 6,
+        "resultOffsets": [
+          2048,
+          2056,
+          2064,
+          2072,
+          2080,
+          2088
+        ],
+        "logicalResultIndices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "resultOffset": 2088,
+        "stackOffset": 73728,
+        "tablesOffset": 4096,
+        "snapshot": 153439940608,
+        "frameSha256": "280d521d850885491b05310d2210c09d04ef60cb0203c2bd201731c29f939ad1",
+        "thread": 153087406080,
+        "joined": true,
+        "results": [
+          "0",
+          "0",
+          "3816130437",
+          "0",
+          "3816771647",
+          "153433659912"
+        ]
+      },
+      {
+        "label": "reserved-gap-1792786340157-5",
+        "base": 153436008448,
+        "slot": 153433657424,
+        "calls": [
+          {
+            "function": 232179178048,
+            "args": [
+              153433661440,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "function": 232179197184,
+            "args": [
+              650000,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "function": 232179197504,
+            "args": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "name": "start"
+          },
+          {
+            "function": 232179389532,
+            "args": [
+              153433735168,
+              4096,
+              3211699,
+              0
+            ],
+            "name": "tail3",
+            "kind": "ipc"
+          },
+          {
+            "function": 232179197504,
+            "args": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "name": "end"
+          },
+          {
+            "function": 232183776672,
+            "args": [
+              153433659912,
+              1,
+              1,
+              0
+            ],
+            "name": "protectedRequestFinished"
+          }
+        ],
+        "bytes": 94208,
+        "logicalCalls": 6,
+        "nativeCalls": 6,
+        "resultOffsets": [
+          2048,
+          2056,
+          2064,
+          2072,
+          2080,
+          2088
+        ],
+        "logicalResultIndices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "resultOffset": 2088,
+        "stackOffset": 73728,
+        "tablesOffset": 4096,
+        "snapshot": 153440202752,
+        "frameSha256": "3c3d6fa8f5e8152ccd7ce5988f0ef276acea0d730212f8b19411d64c0540d1f7",
+        "thread": 153087500288,
+        "joined": true,
+        "results": [
+          "0",
+          "0",
+          "3816132823",
+          "0",
+          "3816773222",
+          "153433659912"
+        ]
+      },
+      {
+        "label": "reserved-gap-1792786340157-6",
+        "base": 153436270592,
+        "slot": 153433657440,
+        "calls": [
+          {
+            "function": 232179178048,
+            "args": [
+              153433661440,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "function": 232179197184,
+            "args": [
+              1700000,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "function": 232179197504,
+            "args": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "name": "start"
+          },
+          {
+            "function": 232179389532,
+            "args": [
+              153433739264,
+              4096,
+              3244466,
+              0
+            ],
+            "name": "canary",
+            "kind": "ipc"
+          },
+          {
+            "function": 232179197504,
+            "args": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "name": "end"
+          },
+          {
+            "function": 232183776672,
+            "args": [
+              153433659912,
+              1,
+              1,
+              0
+            ],
+            "name": "protectedRequestFinished"
+          }
+        ],
+        "bytes": 94208,
+        "logicalCalls": 6,
+        "nativeCalls": 6,
+        "resultOffsets": [
+          2048,
+          2056,
+          2064,
+          2072,
+          2080,
+          2088
+        ],
+        "logicalResultIndices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "resultOffset": 2088,
+        "stackOffset": 73728,
+        "tablesOffset": 4096,
+        "snapshot": 153440464896,
+        "frameSha256": "3834e6e0fb61eb7f75708f6a9546a1b7e978ba91304f41af4510bbd3246202a5",
+        "thread": 153087594496,
+        "joined": true,
+        "results": [
+          "0",
+          "0",
+          "3816165710",
+          "0",
+          "3816759940",
+          "153433659912"
+        ]
+      },
+      {
+        "label": "reserved-gap-1792786340157-7",
+        "base": 153436532736,
+        "slot": 153433657456,
+        "calls": [
+          {
+            "function": 232179178048,
+            "args": [
+              153433661440,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "function": 232179197184,
+            "args": [
+              2000000,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "function": 232179197504,
+            "args": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "name": "start"
+          },
+          {
+            "function": 232179389532,
+            "args": [
+              153433743360,
+              4096,
+              3277233,
+              0
+            ],
+            "name": "filler0",
+            "kind": "ipc"
+          },
+          {
+            "function": 232179197504,
+            "args": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "name": "end"
+          },
+          {
+            "function": 232183776672,
+            "args": [
+              153433659912,
+              1,
+              1,
+              0
+            ],
+            "name": "protectedRequestFinished"
+          }
+        ],
+        "bytes": 94208,
+        "logicalCalls": 6,
+        "nativeCalls": 6,
+        "resultOffsets": [
+          2048,
+          2056,
+          2064,
+          2072,
+          2080,
+          2088
+        ],
+        "logicalResultIndices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "resultOffset": 2088,
+        "stackOffset": 73728,
+        "tablesOffset": 4096,
+        "snapshot": 153440727040,
+        "frameSha256": "820ee569172cbcf03c32da0b1ebeb96d879199d797fea01cfcfe969936846afd",
+        "thread": 153087688704,
+        "joined": true,
+        "results": [
+          "0",
+          "0",
+          "3816175807",
+          "0",
+          "3816762508",
+          "153433659912"
+        ]
+      },
+      {
+        "label": "reserved-gap-1792786340157-8",
+        "base": 153436794880,
+        "slot": 153433657472,
+        "calls": [
+          {
+            "function": 232179178048,
+            "args": [
+              153433661440,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "function": 232179197184,
+            "args": [
+              2150000,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "function": 232179197504,
+            "args": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "name": "start"
+          },
+          {
+            "function": 232179389532,
+            "args": [
+              153433747456,
+              4096,
+              3310000,
+              0
+            ],
+            "name": "filler1",
+            "kind": "ipc"
+          },
+          {
+            "function": 232179197504,
+            "args": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "name": "end"
+          },
+          {
+            "function": 232183776672,
+            "args": [
+              153433659912,
+              1,
+              1,
+              0
+            ],
+            "name": "protectedRequestFinished"
+          }
+        ],
+        "bytes": 94208,
+        "logicalCalls": 6,
+        "nativeCalls": 6,
+        "resultOffsets": [
+          2048,
+          2056,
+          2064,
+          2072,
+          2080,
+          2088
+        ],
+        "logicalResultIndices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "resultOffset": 2088,
+        "stackOffset": 73728,
+        "tablesOffset": 4096,
+        "snapshot": 153440989184,
+        "frameSha256": "7d406564a1896157f6513db6d2f3c45e852704e870e0c57c0f7dcb8f6792fe7c",
+        "thread": 153087782912,
+        "joined": true,
+        "results": [
+          "0",
+          "0",
+          "3816179762",
+          "0",
+          "3816760812",
+          "153433659912"
+        ]
+      },
+      {
+        "label": "reserved-gap-1792786340157-9",
+        "base": 153437057024,
+        "slot": 153433657488,
+        "calls": [
+          {
+            "function": 232179178048,
+            "args": [
+              153433661440,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "function": 232179197184,
+            "args": [
+              2800000,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "function": 232179197504,
+            "args": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "name": "pinStart"
+          },
+          {
+            "function": 232179389532,
+            "args": [
+              153433776128,
+              4096,
+              2982330,
+              0
+            ],
+            "name": "pin",
+            "kind": "ipc"
+          },
+          {
+            "function": 232179197504,
+            "args": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "name": "pinEnd"
+          },
+          {
+            "function": 232179197504,
+            "args": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "name": "clearStart"
+          },
+          {
+            "function": 232179389532,
+            "args": [
+              153433772032,
+              4096,
+              2982330,
+              0
+            ],
+            "name": "clearReport",
+            "kind": "ipc"
+          },
+          {
+            "function": 232179197504,
+            "args": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "name": "clearEnd"
+          },
+          {
+            "function": 232179197504,
+            "args": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "name": "memoryStart"
+          },
+          {
+            "function": 232179389532,
+            "args": [
+              153433767936,
+              4096,
+              2982330,
+              0
+            ],
+            "name": "preRelease",
+            "kind": "ipc"
+          },
+          {
+            "function": 232179197504,
+            "args": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "name": "memoryEnd"
+          },
+          {
+            "function": 232179197504,
+            "args": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "name": "start"
+          },
+          {
+            "function": 232179389532,
+            "args": [
+              153433751552,
+              4096,
+              {
+                "u32": 153433659904
+              },
+              0
+            ],
+            "name": "release",
+            "kind": "ipc"
+          },
+          {
+            "function": 232179197504,
+            "args": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "name": "end"
+          },
+          {
+            "function": 232179177712,
+            "args": [
+              153433661472,
+              0,
+              0,
+              0
+            ]
+          }
+        ],
+        "bytes": 98304,
+        "logicalCalls": 15,
+        "nativeCalls": 16,
+        "resultOffsets": [
+          2048,
+          2056,
+          2064,
+          2072,
+          2080,
+          2088,
+          2096,
+          2104,
+          2112,
+          2120,
+          2128,
+          2136,
+          2144,
+          2152,
+          2160,
+          2168
+        ],
+        "logicalResultIndices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          13,
+          14,
+          15
+        ],
+        "resultOffset": 2168,
+        "stackOffset": 73728,
+        "tablesOffset": 4096,
+        "snapshot": 153441251328,
+        "frameSha256": "5ffb084ecf1be771ffa1ca8839e93ccc657d015a75cfa92941a3bdb711d8715e",
+        "thread": 153087877120,
+        "joined": true,
+        "results": [
+          "0",
+          "0",
+          "3816200123",
+          "0",
+          "3816696498",
+          "3816696498",
+          "0",
+          "3816699013",
+          "3816699021",
+          "0",
+          "3816706002",
+          "3816706004",
+          "0",
+          "3816712025",
+          "0"
+        ]
+      },
+      {
+        "label": "reserved-gap-1792786340157-10",
+        "base": 153437319168,
+        "slot": 153433657504,
+        "calls": [
+          {
+            "function": 232179178048,
+            "args": [
+              153433661440,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "function": 232179178048,
+            "args": [
+              153433661472,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "function": 232179197184,
+            "args": [
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "function": 232179197504,
+            "args": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "name": "start"
+          },
+          {
+            "function": 232179389532,
+            "args": [
+              153433755648,
+              4096,
+              3342767,
+              0
+            ],
+            "name": "guard0",
+            "kind": "ipc"
+          },
+          {
+            "function": 232179197504,
+            "args": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "name": "end"
+          },
+          {
+            "function": 232183776672,
+            "args": [
+              153433659912,
+              1,
+              1,
+              0
+            ],
+            "name": "protectedRequestFinished"
+          }
+        ],
+        "bytes": 94208,
+        "logicalCalls": 7,
+        "nativeCalls": 7,
+        "resultOffsets": [
+          2048,
+          2056,
+          2064,
+          2072,
+          2080,
+          2088,
+          2096
+        ],
+        "logicalResultIndices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "resultOffset": 2096,
+        "stackOffset": 73728,
+        "tablesOffset": 4096,
+        "snapshot": 153441513472,
+        "frameSha256": "fb322dec88317c36878d1400d3b1f0dfe102648319fe9e495cac763788c09a8a",
+        "thread": 153087971328,
+        "joined": true,
+        "results": [
+          "0",
+          "0",
+          "0",
+          "3816712222",
+          "0",
+          "3816763176",
+          "153433659912"
+        ]
+      },
+      {
+        "label": "reserved-gap-1792786340157-11",
+        "base": 153437581312,
+        "slot": 153433657520,
+        "calls": [
+          {
+            "function": 232179178048,
+            "args": [
+              153433661440,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "function": 232179178048,
+            "args": [
+              153433661472,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "function": 232179197184,
+            "args": [
+              150000,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "function": 232183775152,
+            "args": [
+              153433659924,
+              153433659920,
+              4,
+              0
+            ],
+            "name": "sampleReceiveOrder"
+          },
+          {
+            "function": 232179177712,
+            "args": [
+              153433661488,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "function": 232179197504,
+            "args": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "name": "start"
+          },
+          {
+            "function": 232179389532,
+            "args": [
+              153433759744,
+              4096,
+              3375534,
+              0
+            ],
+            "name": "guard1",
+            "kind": "ipc"
+          },
+          {
+            "function": 232179197504,
+            "args": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "name": "end"
+          },
+          {
+            "function": 232183776672,
+            "args": [
+              153433659912,
+              1,
+              1,
+              0
+            ],
+            "name": "protectedRequestFinished"
+          }
+        ],
+        "bytes": 94208,
+        "logicalCalls": 9,
+        "nativeCalls": 9,
+        "resultOffsets": [
+          2048,
+          2056,
+          2064,
+          2072,
+          2080,
+          2088,
+          2096,
+          2104,
+          2112
+        ],
+        "logicalResultIndices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "resultOffset": 2112,
+        "stackOffset": 73728,
+        "tablesOffset": 4096,
+        "snapshot": 153441775616,
+        "frameSha256": "7f34dea41293199bff35f9fe87699309473c1b6a618d420e15a820ae35879937",
+        "thread": 153088065536,
+        "joined": true,
+        "results": [
+          "0",
+          "0",
+          "0",
+          "153433659924",
+          "0",
+          "3816717083",
+          "0",
+          "3816763787",
+          "153433659912"
+        ]
+      },
+      {
+        "label": "reserved-gap-1792786340157-12",
+        "base": 153437843456,
+        "slot": 153433657536,
+        "calls": [
+          {
+            "function": 232179178048,
+            "args": [
+              153433661440,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "function": 232179197184,
+            "args": [
+              2400000,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "function": 232179178048,
+            "args": [
+              153433661472,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "function": 232179178048,
+            "args": [
+              153433661488,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "function": 232179197184,
+            "args": [
+              400000,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "function": 232183775152,
+            "args": [
+              153433659936,
+              153433659920,
+              4,
+              0
+            ],
+            "name": "sampleMinimumSpacing"
+          },
+          {
+            "function": 232179178048,
+            "args": [
+              153433661456,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "function": 232183775152,
+            "args": [
+              153433659916,
+              153433659912,
+              4,
+              0
+            ],
+            "name": "sampleCompleted"
+          },
+          {
+            "function": 232183775152,
+            "args": [
+              153433659928,
+              153433659924,
+              4,
+              0
+            ],
+            "name": "sampleEarlyHole"
+          },
+          {
+            "function": 232183775152,
+            "args": [
+              153433845760,
+              153433659932,
+              {
+                "u32": 153433659916
+              },
+              0
+            ],
+            "name": "abortCompleted"
+          },
+          {
+            "function": 232183775152,
+            "args": [
+              153433845760,
+              153433659932,
+              {
+                "u32": 153433659928
+              },
+              0
+            ],
+            "name": "abortEarlyHole"
+          },
+          {
+            "function": 232183775152,
+            "args": [
+              153433845760,
+              153433659932,
+              {
+                "u32": 153433659936
+              },
+              0
+            ],
+            "name": "abortMinimumSpacing"
+          },
+          {
+            "function": 232179197504,
+            "args": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "name": "start"
+          },
+          {
+            "function": 232179389532,
+            "args": [
+              153433763840,
+              4096,
+              {
+                "u32": 153433659908
+              },
+              0
+            ],
+            "name": "trigger",
+            "kind": "ipc"
+          },
+          {
+            "function": 232179197504,
+            "args": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "name": "end"
+          }
+        ],
+        "bytes": 102400,
+        "logicalCalls": 15,
+        "nativeCalls": 19,
+        "resultOffsets": [
+          2048,
+          2056,
+          2064,
+          2072,
+          2080,
+          2088,
+          2096,
+          2104,
+          2112,
+          2120,
+          2128,
+          2136,
+          2144,
+          2152,
+          2160,
+          2168,
+          2176,
+          2184,
+          2192
+        ],
+        "logicalResultIndices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          10,
+          12,
+          14,
+          15,
+          17,
+          18
+        ],
+        "resultOffset": 2192,
+        "stackOffset": 77824,
+        "tablesOffset": 4096,
+        "snapshot": 153442037760,
+        "frameSha256": "9ac0cda5086d10c9693ec3f6c330670548589eabb3279de5e8f3c5a63f901690",
+        "thread": 153088159744,
+        "joined": true,
+        "results": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "153433659936",
+          "153433661456",
+          "153433659916",
+          "153433659928",
+          "153433845760",
+          "153433845760",
+          "153433845760",
+          "3816729720",
+          "0",
+          "3816730637"
+        ]
+      }
+    ],
+    "released": true
+  }
+}

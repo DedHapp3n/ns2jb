@@ -1,0 +1,15 @@
+1/4 Checking the console
+app/map
+map
+app/inspect-mounts
+inspect mounts
+Remove recorded scratch from prior launches
+app/qualify
+qualify
+2/4 Acquiring FS memory
+FS read, write and restoration
+Error: FS acquisition did not complete. Inspect C:\VS\repros\ns2jb\runs\switch2-zBF5bf\switch2\acquisition.log; restart the console before another launch.
+    at Object.start (C:\VS\repros\ns2jb\runs\switch2-zBF5bf\switch2\acquire.cjs:49:15)
+    at async C:\VS\repros\ns2jb\runs\switch2-zBF5bf\switch2\pipeline.cjs:36:21
+    at async stage (C:\VS\repros\ns2jb\runs\switch2-zBF5bf\switch2\pipeline.cjs:19:20)
+    at async main (C:\VS\repros\ns2jb\runs\switch2-zBF5bf\switch2\pipeline.cjs:35:5)

@@ -1,0 +1,21 @@
+{
+  "platform": 2,
+  "sourceSha256": "6f67bea2e701ad5671433083a4cc7984f6f9061a0d12a347d3d02a1f4c7076e9",
+  "started": "2026-10-23T20:17:54.426Z",
+  "verified": false,
+  "bootstrap": {
+    "started": "2026-10-23T20:19:44.661Z",
+    "platform": 2,
+    "memoryChallenge": "3949bb8824f281816815a9609414a7f2dceaf4311431f4b4169b7c97baf5aff79827513720537c0445a71e59f9a744e68fb4cee9aba7d2dc251a12349f3b93f1",
+    "scratchRestored": true,
+    "importRestored": true,
+    "activity": {
+      "offset": 1775776,
+      "controller": 26859232544
+    },
+    "verified": true,
+    "completed": "2026-10-23T20:19:44.751Z"
+  },
+  "error": "The run stopped. Keep the runs folder and restart the console before trying again.",
+  "completed": "2026-10-23T20:19:52.703Z"
+}

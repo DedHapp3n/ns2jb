@@ -1,0 +1,18 @@
+{
+  "port": 54540,
+  "token": "02b4a3ceffedec625c60f1289249d679e2ebe126733a9974966b4db355e56b2d",
+  "addresses": {
+    "scratch": 38828254080,
+    "scratchBytes": 524288,
+    "main": 471582396416,
+    "sdk": 471945367552,
+    "got": 471592657648,
+    "memmove": 471951164144,
+    "backing": 38692455648,
+    "controller": 38692455760,
+    "platform": 2,
+    "sdkCrc32": 3925528160,
+    "session": "switch2-1c01L1",
+    "target": "switch2"
+  }
+}
