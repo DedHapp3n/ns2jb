@@ -5,8 +5,9 @@ Thank you Codex for dutifully packaging the exploits for distribution. No, I hav
 Runs two small native functions inside FS, checks their results, and restores the
 original instructions. Switch 2 only; no npm install or compiler needed.
 
-You need **SmileBASIC 4.4.9**, **system software 23.0.1**, **Node.js 22+** on
-macOS or Linux, and over **20 MiB free** in the SmileBASIC save. The computer and
+You need **SmileBASIC 4.4.9**, **system software 23.0.1**, **Node.js 22+**, and
+over **20 MiB free** in the SmileBASIC save. Upstream was documented for macOS
+and Linux. This fork also contains a Windows host-port layer. The computer and
 console must be on the same reachable network.
 
 ## One-time setup
@@ -58,3 +59,23 @@ launch sequence; `engine/switch2/process/fs-execute.cjs` contains the FS demo.
 The native helper and its source are in `engine/switch2/ro/payload/`.
 Developers can reproduce it with Zig 0.15.2:
 `node engine/build-payload.cjs --check --zig /path/to/zig`.
+
+## Windows host-port status
+
+This fork replaces the POSIX-only local control endpoint with a small
+cross-platform Node.js IPC layer:
+
+- Unix hosts keep a private Unix-domain socket under the system temp directory.
+- Windows hosts use a per-run random `\\\\.\\pipe\\ns2jb-...` named pipe.
+- No extra LAN-facing port is opened for this internal control channel.
+- The Switch-facing TCP protocol, native payload, exploit constants and target
+  behavior are unchanged by the host-port patch.
+
+**Verification boundary:** the Windows changes are host-side portability work.
+They have not yet been verified end-to-end on Switch 2 hardware from Windows.
+The upstream October 21 hardware result remains an upstream Linux/macOS-era
+result, not evidence for the Windows port.
+
+On Windows, Node maps child-process termination signals to abrupt process
+termination rather than POSIX signal delivery. A failed/aborted run must
+therefore still be treated as requiring the documented fresh console restart.
