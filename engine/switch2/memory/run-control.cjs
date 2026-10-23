@@ -1,6 +1,7 @@
 // Track the one acquisition run. Stop at a checkpoint, then finish restoration.
 const fs = require('node:fs/promises');
 const {EventEmitter} = require('node:events');
+const {createPrivateTempDirectory} = require('../../shared/local-ipc.cjs');
 
 class StopRequested extends Error {
   constructor() {super('Run stopped at a checkpoint'); this.name = 'StopRequested';}
@@ -18,8 +19,7 @@ class RunControl {
     };
   }
   async start() {
-    this.state.directory = await fs.mkdtemp('/tmp/ns2-');
-    await fs.chmod(this.state.directory, 0o700);
+    this.state.directory = await createPrivateTempDirectory('ns2-');
     this.started = true;
     process.on('SIGINT', this.stopSignal);
     process.on('SIGTERM', this.stopSignal);
