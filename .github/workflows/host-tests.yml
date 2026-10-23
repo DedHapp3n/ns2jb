@@ -1,0 +1,30 @@
+name: Host tests
+
+on:
+  push:
+    branches:
+      - windows-host-port
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  host-tests:
+    strategy:
+      fail-fast: false
+      matrix:
+        os:
+          - ubuntu-latest
+          - windows-latest
+    runs-on: ${{ matrix.os }}
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+      - name: Set up Node.js 22
+        uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1
+        with:
+          node-version: 22
+          package-manager-cache: false
+      - name: Run host-side tests
+        run: node test.cjs
